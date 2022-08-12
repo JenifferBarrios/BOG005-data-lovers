@@ -1,41 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Ghibli Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <header class="cabecera">
-        <img src="imagenes/totoro1.png" id="logo" alt="totoroLogo">
-        <hgroup class="tituloPagina">
-          <h1>Ghibli Lovers</h1>
-          <h2>¡Para verdaderos fans!</h2>
-        </hgroup>
-      <div id="menuDesplegable">
-        <button>Menú</button>
-      </div>
-        <nav>
-          <!-- <img src="imagenes/hamburguesa2.png" id="menuPrincipal" alt="menuHamburguesa"> -->
-          <ul id="listaMenu">
-            <li><a href="#"> Inicio</a></li>
-            <li><a href="#"> Historia de Estudio Ghibli</a></li>
-            <li><a href="#">Galería de fotos</a></li>
-            <li><a href="#">Contáctanos</a></li>
-          </ul>
 
-        </nav>
-      </header>
-      <main class="contenido">
+<head>
+  <meta charset="utf-8">
+  <title>Ghibli Lovers</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
 
+<body>
+  <header class="header">
+    <img src="imagenes/totoro1.png" class="header-logo" alt="totoroLogo">
+    <hgroup class="header-titulo-pagina">
+      <h1 class="header-titulo" >Ghibli Lovers</h1>
+      <h2  class="header-titulo">¡Para verdaderos fans!</h2>
+    </hgroup>
+    <nav class="nav">
+        <!-- <img src="imagenes/hamburguesa2.png" id="menuPrincipal" alt="menuHamburguesa"> -->
+        <ul clase="nav-menu" id="listaMenu">
+          <li class="nav-menu-item"><a href="#" class="nav-menu-link"> Inicio</a></li>
+          <li class="nav-menu-item"><a href="#" class="nav-menu-link"> Historia de Estudio Ghibli</a></li>
+          <li class="nav-menu-item"><a href="#" class="nav-menu-link">Galería de fotos</a></li>
+          <li class="nav-menu-item"><a href="#" class="nav-menu-link">Contáctanos</a></li>
+        </ul>
+    </nav>
+  </header>
+  <main class="main">
+  </main>
+  <footer class="footer">
+    <img  src="imagenes/ig.png" alt="instagram" id="ig" class="footer-img" >
+  </footer>
 
+  <script src="main.js" type="module"></script>
+</body>
 
-      </main>
-      <footer class="pie">
-        <img src="imagenes/ig.png" alt="facebook" id="ig">
-      </footer>
-    </div>
-    <script src="main.js" type="module"></script>
-  </body>
 </html>
