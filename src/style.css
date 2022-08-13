@@ -7,7 +7,7 @@ body {
     background:bisque;
     color:darkslateblue;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+    }
 
 .header {
     display: flex;
