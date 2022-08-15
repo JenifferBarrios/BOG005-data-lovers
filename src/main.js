@@ -6,9 +6,9 @@ import data from './data/ghibli/ghibli.js';
 
 console.log(example, data);
 
-function menu() {
-    let listaMenu
-    
+const navToggle = document.querySelector(".nav-toggle");
+const navMenu = document.querySelector(".nav-menu");
 
-    return listaMenu;
-}
+navToggle.addEventListener("click", () =>{
+    navMenu.classList.toggle("nav-menu_visible");
+});
