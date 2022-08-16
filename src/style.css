@@ -17,8 +17,8 @@ body {
     left: 0;
     width: 100%;
     border-bottom-left-radius: 30px;
-    border-bottom: 4px solid rgb(255, 119, 0);
-    border-left: 4px solid rgb(255, 119, 0);
+    border-left: 4px solid rgb(228, 127, 25);
+    border-top: 4px solid rgb(228, 127, 25);  
 }
 
 .nav {
@@ -101,13 +101,13 @@ body {
 }
 
 .card {
-    background-color: #ffccb7c8;
+    background-color: #d3b1a4;
     width: 220px;
     height: 370px;
     margin: 10px;
     border-radius: 8px; 
     border-left: 4px solid rgb(228, 127, 25);
-    border-top: 4px solid rgb(228, 127, 25); 
+    border-top: 4px solid rgb(228, 127, 25);  
 }
 
 .card-image {
@@ -260,4 +260,5 @@ body {
     .card p {
         padding: 5px;
     }
+
 }
