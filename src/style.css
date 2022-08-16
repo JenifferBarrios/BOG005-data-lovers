@@ -5,56 +5,53 @@
 }
 
 body {
-    background-color: #eedbc5;
+    background-color: #79cbce72;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .header {
-    background-color: #55C5D1;
-    height: 20vh;
+    background-color: #5ec7d2f0;
+    height: 150px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    border-bottom-left-radius: 10vh;
+    border-bottom-left-radius: 30px;
 }
 
 .nav {
     display: flex;
     justify-content: space-between;
     max-width: 992px;
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 
 .nav-menu-link {
     color: rgb(78, 73, 73);
     text-decoration: none;
-    padding: 8px 12px;
     border-radius: 6px;
+    align-items: center;
 }
 
 .header-nav-logo {
-    height: 20vh;
-    width: 20vh;
+    margin-left: auto;
+    height: 150px;
+    width: 150px;
 }
 
 .nav-titulo-pagina {
-    font-size: 2.2em;
-    height: 20vh;
-    /* line-height: 20vh; es para que quede centrado dentro del header, se pone del tamano del contenedor*/
+    font-size: 60px;
+    line-height: 20px;
     color: rgb(66, 60, 60);
     width: max-content;
-    line-height: 25vh;
-    
+    margin-top: 40px;
+    margin-right: 2px; 
 }
-
-/* .subtitulo {
-    font-size: 1em;
-    height: fit-content;
-} */
 
 .nav-menu {
     display: flex;
+    padding-top: 70px;
+    padding-left: 0;
     justify-content: space-between;
     max-width: 992px;
     margin: 0 auto;
@@ -64,12 +61,12 @@ body {
 .nav-menu-item {
     font-size: 25px;
     margin: 0 10px;
-    line-height: 20vh;
+    line-height: 20px;
     width: max-content;
 }
 
 .nav-menu-link:hover {
-    background-color: rgb(79, 151, 202);
+    background-color: #b5eff8;
     transition: 0.5s;
 }
 
@@ -82,76 +79,124 @@ body {
     color: rgb(66, 60, 60);
     background: none;
     border: none;
-    font-size: 3vh;
-    padding: 0px 15px;
-    /* line-height: 2vh; */
-    /* margin: 5px 5px; */
-    /* display: none; */
-    margin-bottom: 10vh;
+    padding-right: 15;
+    margin-bottom: 55px;
     display: none;
+    cursor: pointer;
 }
 
 .main {
+    height: 100px;
+    width: 100%;
+}
+
+/* TARJETA DISPOSITIVO GRANDE */
+
+.container {
     display: flex;
-    height: 100vh;
-    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-.footer {
-    display: inline-flex;
-    height: 10vh;
-    width: 100%;
-    background-color: #55C5D1;
-    border-top-right-radius: 1vh;
+.card {
+    background-color: #d3b1a4;
+    width: 220px;
+    height: 370px;
+    margin: 10px;
+    border-radius: 8px;  
 }
 
-.footer-texto {
-    font-size: 2em;
-    color: rgb(65, 60, 60);
+.card-image {
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.card-1 {
+    background-image: url("https://thumb.canalplus.pro/http/unsafe/1920x1080/smart/creativemedia-image.canalplus.pro/content/0001/07/55c9d3643ca86c13d17e616752e25f43fb1145a3.jpeg");
+}
+.card-2 {
+    background-image: url("https://www.somagnews.com/wp-content/uploads/2020/06/studio-ghibli-live-audience-crop-1582703065-1587x1058-1-e1591133834629.jpg");
+}
+.card-3 {
+    background-image: url("https://www.refinery29.com/images/10291378.jpg?crop=40:21");
+}
+.card-4 {
+    background-image: url("https://www.refinery29.com/images/10291378.jpg?crop=40:21");
+}
+.card h2 {
+    padding: 10px;
+    margin-left: 10px;
+}
+.card p {
+    padding: 10px;
+}
+.card a {
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    display: block;
     text-align: center;
-    padding:  2vh;
+    text-decoration: none;
+    margin: 8px 10px;
+    border-radius: 10px;
 }
 
-.footer-img {
-    padding: 0vh 22vh;
-    position: fixed;
-} 
+.main> .present {
+    margin-top: 140px;
+    margin-left: 50px;
+    padding: 20px 80px;
+    /* background-color: #d3b1a472; */
+    border-radius: 10px;
+    text-align: justify;
+    width: 90%;
+}
+
+.present> p {
+    font-size: 20px;
+    padding: 5px;
+}
 
 /* DISPOSITIVOS DE TAMAÑO MENOR A 768px */
 
 @media (max-width: 768px ) {
+    
     body {
-        padding-top: 15vh;
+        padding-top: 15px;
     }
 
     .header {
-        height: 15vh;
-        border-bottom-left-radius: 3vh;
+        height: 120px;
+        border-bottom-left-radius: 20px;
+        overflow: hidden;
     }
 
     .header-nav-logo {
-        height: 15vh;
-        width: 15vh;
+        height: 100px;
+        width: 100px; 
+        margin-left: -15px;
     }
 
     .nav-titulo-pagina {
-        font-size: 1.8em;
-        line-height: 20vh;
-        text-align: left;
+        font-size: 30px;
+        text-align: center;
+        padding: 5px;
+        margin-top: 7px;
     }
 
     .nav-menu {
         flex-direction: column;
         align-items: center;
         margin: 0;
-        background-color: rgb(79, 151, 202);
+        background-color: rgb(122, 230, 241);
         position: fixed;
         left: 0;
-        top: 15vh;
+        top: 90px;
         width: 100%;
         padding: 20px 0;
-
-        height: calc(100% - 20vh);
+        border-radius: 20px;
+        height: calc(40% - 20px);
         overflow-y: auto;
 
         left: 100%;
@@ -159,27 +204,56 @@ body {
     }
 
     .nav-menu-item {
-        line-height: 10vh;
+        line-height: 10px;
     }
 
     .nav-menu-link:hover {
         background: none;
-        color: bisque;
+        color: rgb(193, 242, 244);
     }
-
 
     .nav-toggle {
         display: block;
+        font-size: 25px;
+        margin-top: 2px;
     }
 
     .nav-menu_visible {
         left: 0;
     }
 
-    /* .footer {
-        bottom: 100%;
-    } */
+    .main> .present {
+        margin-top: 80px;
+        padding-left: 30px;
+        border-radius: 10px;
+        text-align: justify;
+    }
 
+/* TARJETAS DISPOSITIVO PEQUE*/
 
+    .container {
+        margin-top: 5px;
+        flex-wrap: wrap;
+    }
 
+    .card {
+        margin-top: 2px;
+        width: auto;
+        height: auto;
+        border-radius: 4px; 
+    }
+
+    .card-image {
+        height: 150px;
+        margin: 10px;
+        /* border-radius: 10px 10px 0 0; */
+    }
+
+    .card h2 {
+        padding: 5px;
+        margin-left: 5px;
+    }
+    .card p {
+        padding: 5px;
+    }
 }
