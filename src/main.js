@@ -13,10 +13,5 @@ navToggle.addEventListener("click", () =>{
 //console.log(data.films);
 console.log(data.films[0].title);
 
-
-
-    
-    
-    
-    
-    
+//console.log(data.films);
+console.log(data.films[0].title);
