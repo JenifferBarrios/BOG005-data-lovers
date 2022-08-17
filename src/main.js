@@ -10,6 +10,8 @@ const navMenu = document.querySelector(".nav-menu");
 navToggle.addEventListener("click", () =>{
     navMenu.classList.toggle("nav-menu_visible");
 });
+//console.log(data.films);
+console.log(data.films[0].title);
 
 
 
