@@ -92,61 +92,6 @@ body {
     width: 100%;
 }
 
-/* TARJETA DISPOSITIVO GRANDE */
-
-.container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.card {
-    background-color: #d3b1a4;
-    width: 220px;
-    height: 370px;
-    margin: 10px;
-    border-radius: 8px; 
-    border-left: 4px solid rgb(228, 127, 25);
-    border-top: 4px solid rgb(228, 127, 25);  
-}
-
-.card-image {
-    height: 170px;
-    margin-bottom: 15px;
-    background-size: cover;
-    border-radius: 15px 15px 0 0;
-}
-
-.card-1 {
-    background-image: url("https://thumb.canalplus.pro/http/unsafe/1920x1080/smart/creativemedia-image.canalplus.pro/content/0001/07/55c9d3643ca86c13d17e616752e25f43fb1145a3.jpeg");
-}
-.card-2 {
-    background-image: url("https://www.somagnews.com/wp-content/uploads/2020/06/studio-ghibli-live-audience-crop-1582703065-1587x1058-1-e1591133834629.jpg");
-}
-.card-3 {
-    background-image: url("https://www.refinery29.com/images/10291378.jpg?crop=40:21");
-}
-.card-4 {
-    background-image: url("https://www.refinery29.com/images/10291378.jpg?crop=40:21");
-}
-.card h2 {
-    padding: 10px;
-    margin-left: 10px;
-}
-.card p {
-    padding: 10px;
-}
-.card a {
-    background-color: black;
-    color: white;
-    padding: 15px 20px;
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    margin: 8px 10px;
-    border-radius: 10px;
-}
-
 .main> .present {
     margin-top: 140px;
     margin-left: 50px;
@@ -160,7 +105,78 @@ body {
 .present> p {
     font-size: 20px;
     padding: 5px;
+    color: rgb(85, 82, 82);
 }
+
+/* TARJETA DISPOSITIVO GRANDE */
+
+.container {
+    /* FLEXBOX */
+    /* display: flex;
+    justify-content: center;
+    margin-top: 20px; */
+
+    /* GRID */
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+
+
+}
+
+.card {
+    /* FLEXBOX */
+    /* width: 220px; */
+    /* height: 370px; */
+    /* margin: 10px; */
+    background-color: #d3b1a4;
+    border-radius: 8px; 
+    border-left: 4px solid rgb(228, 127, 25);
+    border-top: 4px solid rgb(228, 127, 25);  
+}
+
+.card-image {
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+/* .card-1 {
+    background-image: url("https://thumb.canalplus.pro/http/unsafe/1920x1080/smart/creativemedia-image.canalplus.pro/content/0001/07/55c9d3643ca86c13d17e616752e25f43fb1145a3.jpeg");
+}
+.card-2 {
+    background-image: url("https://www.somagnews.com/wp-content/uploads/2020/06/studio-ghibli-live-audience-crop-1582703065-1587x1058-1-e1591133834629.jpg");
+}
+.card-3 {
+    background-image: url("https://www.refinery29.com/images/10291378.jpg?crop=40:21");
+}
+.card-4 {
+    background-image: url("https://www.refinery29.com/images/10291378.jpg?crop=40:21");
+} */
+.card h2 {
+    padding: 10px;
+    margin-left: 10px;
+}
+.card p {
+    padding: 10px;
+}
+.card a {
+    background-color: rgb(44, 42, 42);
+    color: rgb(189, 227, 248);
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin: 8px 10px;
+    border-radius: 10px;
+}
+
+
 
 /* DISPOSITIVOS DE TAMAÑO MENOR A 768px */
 
@@ -179,7 +195,7 @@ body {
     .header-nav-logo {
         height: 100px;
         width: 100px; 
-        margin-left: -15px;
+        margin-left: -25px;
     }
 
     .nav-titulo-pagina {
@@ -193,7 +209,7 @@ body {
         flex-direction: column;
         align-items: center;
         margin: 0;
-        background-color: rgb(122, 230, 241);
+        background-color: rgb(241, 179, 122);
         position: fixed;
         left: 0;
         top: 90px;
@@ -226,22 +242,44 @@ body {
         left: 0;
     }
 
+    .main {
+        height: 100px;
+        width: 100%;
+    }
+
+    .present> p {
+        width: 100%;
+        margin: 5px;
+    }
+    
     .main> .present {
-        margin-top: 80px;
-        padding-left: 30px;
-        border-radius: 10px;
+        margin-top: 100px;
+        margin-left: 20px;
+        padding: 10px;
+        width: 80%;
+        /* border-radius: 10px; */
         text-align: justify;
     }
 
 /* TARJETAS DISPOSITIVO PEQUE*/
 
     .container {
-        margin-top: 5px;
+        /* FLEXBOX */
+        display: flex;
+        justify-content: center;
+        /* margin-top: 20px; */
+        margin: 0 15px;
         flex-wrap: wrap;
+        padding-top: 10px;
+        
     }
 
     .card {
-        margin-top: 2px;
+        /* FLEXBOX */
+        /* width: 220px; */
+        /* height: 370px; */
+        margin: 10px;
+        /* margin-bottom: 10px; */
         width: auto;
         height: auto;
         border-radius: 4px; 
