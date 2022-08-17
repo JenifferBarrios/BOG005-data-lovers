@@ -125,9 +125,6 @@ body {
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
 
-
-}
-
 .card {
     /* FLEXBOX */
     /* width: 220px; */
@@ -138,7 +135,6 @@ body {
     border-left: 4px solid rgb(228, 127, 25);
     border-top: 4px solid rgb(228, 127, 25);  
 }
-
 .card-image {
     height: 170px;
     margin-bottom: 15px;
@@ -165,6 +161,12 @@ body {
 .card p {
     padding: 10px;
 }
+
+
+.card p {
+    padding: 10px;
+}
+
 .card a {
     background-color: rgb(44, 42, 42);
     color: rgb(189, 227, 248);
@@ -175,8 +177,6 @@ body {
     margin: 8px 10px;
     border-radius: 10px;
 }
-
-
 
 /* DISPOSITIVOS DE TAMAÑO MENOR A 768px */
 
@@ -262,7 +262,6 @@ body {
     }
 
 /* TARJETAS DISPOSITIVO PEQUE*/
-
     .container {
         /* FLEXBOX */
         display: flex;
@@ -271,9 +270,7 @@ body {
         margin: 0 15px;
         flex-wrap: wrap;
         padding-top: 10px;
-        
     }
-
     .card {
         /* FLEXBOX */
         /* width: 220px; */
@@ -298,5 +295,4 @@ body {
     .card p {
         padding: 5px;
     }
-
-}
+  }
