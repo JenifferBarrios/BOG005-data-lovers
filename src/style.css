@@ -111,12 +111,6 @@ body {
 /* TARJETA DISPOSITIVO GRANDE */
 
 .container {
-    /* FLEXBOX */
-    /* display: flex;
-    justify-content: center;
-    margin-top: 20px; */
-
-    /* GRID */
     width: 90%;
     max-width: 1200px;
     margin: auto;
@@ -127,15 +121,12 @@ body {
 }
 
 .card {
-    /* FLEXBOX */
-    /* width: 220px; */
-    /* height: 370px; */
-    /* margin: 10px; */
     background-color: #d3b1a4;
     border-radius: 8px; 
     border-left: 4px solid rgb(228, 127, 25);
     border-top: 4px solid rgb(228, 127, 25);  
 }
+
 .card-image {
     height: 170px;
     margin-bottom: 15px;
@@ -143,18 +134,6 @@ body {
     border-radius: 15px 15px 0 0;
 }
 
-#card-1 {
-    background-image: url("https://thumb.canalplus.pro/http/unsafe/1920x1080/smart/creativemedia-image.canalplus.pro/content/0001/07/55c9d3643ca86c13d17e616752e25f43fb1145a3.jpeg");
-}
-/* .card-2 {
-    background-image: url("https://www.somagnews.com/wp-content/uploads/2020/06/studio-ghibli-live-audience-crop-1582703065-1587x1058-1-e1591133834629.jpg");
-}
-.card-3 {
-    background-image: url("https://www.refinery29.com/images/10291378.jpg?crop=40:21");
-}
-.card-4 {
-    background-image: url("https://www.refinery29.com/images/10291378.jpg?crop=40:21");
-} */
 .card h2 {
     padding: 10px;
     margin-left: 10px;
@@ -162,7 +141,6 @@ body {
 .card p {
     padding: 10px;
 }
-
 
 .card p {
     padding: 10px;
