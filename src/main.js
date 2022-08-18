@@ -21,12 +21,5 @@ function crearTarjetas(peliculas) {
 }
 console.log(data.films);
 
-
-
-
-
-    
-    
-    
-    
-    
+//console.log(data.films);
+console.log(data.films[0].title);
