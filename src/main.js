@@ -21,11 +21,6 @@ function crearTarjetas(peliculas){
 }
 
 
-
-
-
-
-
 /* const card1= document.querySelector(".card");
 const card1title=card1.querySelector("h2");
 console.log(card1title);
