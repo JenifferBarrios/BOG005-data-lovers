@@ -2,7 +2,7 @@ import data from './data/ghibli/ghibli.js';
 console.log(data.films[0].title);
 crearTarjetas(data.films);
 
-console.log(example, data);
+// console.log(example, data);
 const navToggle = document.querySelector(".nav-toggle");
 const navMenu = document.querySelector(".nav-menu");
 navToggle.addEventListener("click", () =>{
