@@ -111,6 +111,7 @@ body {
 /* TARJETA DISPOSITIVO GRANDE */
 
 .container {
+    /* GRID */
     width: 90%;
     max-width: 1200px;
     margin: auto;
@@ -126,7 +127,6 @@ body {
     border-left: 4px solid rgb(228, 127, 25);
     border-top: 4px solid rgb(228, 127, 25);  
 }
-
 .card-image {
     height: 170px;
     margin-bottom: 15px;
@@ -197,7 +197,6 @@ body {
         border-radius: 20px;
         height: calc(40% - 20px);
         overflow-y: auto;
-
         left: 100%;
         transition: left 0.3s;
     }
