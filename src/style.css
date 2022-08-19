@@ -111,11 +111,6 @@ body {
 /* TARJETA DISPOSITIVO GRANDE */
 
 .container {
-    /* FLEXBOX */
-    /* display: flex;
-    justify-content: center;
-    margin-top: 20px; */
-
     /* GRID */
     width: 90%;
     max-width: 1200px;
@@ -146,7 +141,6 @@ body {
 .card p {
     padding: 10px;
 }
-
 
 .card p {
     padding: 10px;
@@ -203,7 +197,6 @@ body {
         border-radius: 20px;
         height: calc(40% - 20px);
         overflow-y: auto;
-
         left: 100%;
         transition: left 0.3s;
     }
