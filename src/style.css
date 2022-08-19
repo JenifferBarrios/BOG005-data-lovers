@@ -6,7 +6,7 @@
 
 body {
     background-color: #79cbce72;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .header {
@@ -87,61 +87,72 @@ body {
     cursor: pointer;
 }
 
-.main {
+/* .main {
     height: 100px;
     width: 100%;
-}
+} */
 
-.main> .present {
-    margin-top: 140px;
+.present {
+    margin-top: 160px;
     margin-left: 50px;
     padding: 20px 80px;
-    /* background-color: #d3b1a472; */
+    background-color: #d3b1a472;
     border-radius: 10px;
     text-align: justify;
     width: 90%;
-}
-
-.present> p {
-    font-size: 20px;
+    font-size: 25px;
+    font-style: italic;
+    border-bottom: 10px dashed rgb(228, 127, 25);
     padding: 5px;
-    color: rgb(85, 82, 82);
+    color: rgb(103, 97, 97);
 }
 
 /* TARJETA DISPOSITIVO GRANDE */
-
 .container {
     /* GRID */
-    width: 90%;
+    width: 60%;
     max-width: 1200px;
-    margin: auto;
+    margin-left: 80px;
     padding: 40px 0;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
 }
 
 .card {
     background-color: #d3b1a4;
+    transition: 1s;
     border-radius: 8px; 
     border-left: 4px solid rgb(228, 127, 25);
-    border-top: 4px solid rgb(228, 127, 25);  
+    border-top: 4px solid rgb(228, 127, 25); 
+    width: 400px; 
 }
+
+.card:hover {
+    background-color: #5ec7d2f0;
+}
+
 .card-image {
-    height: 170px;
+    /* height: 200px; */
     margin-bottom: 15px;
     background-size: cover;
     border-radius: 15px 15px 0 0;
 }
 
-.card h2 {
-    padding: 10px;
-    margin-left: 10px;
-}
-.card p {
-    padding: 10px;
+.posters {
+    display: flex;
+    height: 300px;
+    width: auto;
+    padding-left: 35px;
+    padding-top: 10px;   
 }
 
+.titulo {
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 25px;
+    color: aquamarine;
+}
 .card p {
     padding: 10px;
 }
@@ -249,6 +260,7 @@ body {
         flex-wrap: wrap;
         padding-top: 10px;
     }
+
     .card {
         /* FLEXBOX */
         /* width: 220px; */
