@@ -11,9 +11,9 @@ function crearTarjetas(peliculas){
     peliculas.forEach(films => {   
     container.innerHTML += `
     <article class="card">
-            <img class="posters" src="${films.poster}"
             <h2 class="titulo">${films.title}</h2>
-            <p>${films.description}</p>
+            <img class="posters" src="${films.poster}"
+            <p class="descripcion">${films.description}</p>
             <a href="https://www.ghiblicollection.com/product/my-neighbor-totoro?product_id=6644" target="_blank">Conoce Mas</a>
           </article>
     `});
@@ -21,13 +21,9 @@ function crearTarjetas(peliculas){
 }
 //console.log(data.films);
 // console.log(data.films[0].title);
-
-//console.log(data.films);
-// console.log(data.films[0].title);
-
+// ***CODIGO PARA INSERTAR DATA EN EL DOM***
 // const card1= document.querySelector(".card");
 // const card1title=card1.querySelector("h2");
 // console.log(card1title);
 // card1title.textContent=data.films[0].title;
-
 // const card2 = document.createElement('article')
