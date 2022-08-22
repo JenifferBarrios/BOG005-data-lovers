@@ -140,7 +140,15 @@ body {
     margin: 8px 10px;
     border-radius: 10px;
 }
-/* DISPOSITIVOS DE TAMAÑO MENOR A 768px */
+.info-movies {
+    display: none;
+}
+/* .info-movies-visible {
+    display: block;
+} */
+/* =============================================================== 
+          DISPOSITIVOS DE TAMAÑO MENOR A 768px 
+=============================================================== */
 @media (max-width: 768px ) {
     .main {
         width: auto;
