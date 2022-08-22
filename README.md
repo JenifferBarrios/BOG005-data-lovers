@@ -1,5 +1,5 @@
 ### DATA LOVERS / DATA GHIBLI
-![ghibli](src/images/ghibli.png)
+![ghibli](src/imagenes/ghibli.png)
 
 ### DEFINICION DE PRODUCTO
 La página tiene como objetivo brindar información a los visitantes sobre las películas realizadas por Estudio Ghibli a través de los años, desde su fundación en 1985.
