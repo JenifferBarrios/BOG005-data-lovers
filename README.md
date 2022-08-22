@@ -12,7 +12,7 @@ Una vez realizados los prototipos procedimos a escribir el código base en HTML 
 
 ### HISTORIAS DE USUARIO
 
-## Historia de Usuario 1:
+1. Historia de Usuario 1:
 # YO COMO visitante de la web GHIBLI Lovers QUIERO un menú intuitivo PARA acceder a links de mi interés dentro y fuera de la página, en diferentes dispositivos.
 
 Decidimos enfocar esta primera historia de usuario en algunos objetivos transversales que ambas teníamos pendientes desde el proyecto anterior, relacionados con CSS e interacción con el DOM. Adicionalmente, abordamos el manejo de GIT, creando las llaves SSH.
@@ -25,7 +25,7 @@ Decidimos enfocar esta primera historia de usuario en algunos objetivos transver
 .[x] La página en general y el menú en particular responden a buenas prácticas de diseño visual.
 
 
-## Historia de Usuario 2:
+2. Historia de Usuario 2:
 YO COMO visitante de la web Ghibli Lovers QUIERO visualizar unas tarjetas con información de las películas PARA obtener datos básicos sobre ellas y una segunda pantalla donde pueda ver datos específicos de la película que yo elija.
 
 # Criterios de aceptación
@@ -41,7 +41,7 @@ YO COMO visitante de la web Ghibli Lovers QUIERO visualizar unas tarjetas con in
 1. [ ] El código está respaldado en GitHub
 2. [ ] La página es completamente responsive
 3. [ ] La página se conecta a la API pública de Estudio Ghibli
-4. [ ] *En la página puede filtrarse información solicitada por el usuario
+4. [ ] En la página puede filtrarse información solicitada por el usuario
 
 ### PROTOTIPO DE BAJA FIDELIDAD
 
