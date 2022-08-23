@@ -1,15 +1,13 @@
 import data from './data/ghibli/ghibli.js';
+import { filtrarDirector } from './data.js';
 // console.log(data.films[0].title);
-crearTarjetas(data.films);
-infoMovie(data.films);
-
-// Despliega menú hamburguesa:
+// *******Despliega menú hamburguesa*******
 const navToggle = document.querySelector(".nav-toggle");
 const navMenu = document.querySelector(".nav-menu");
 navToggle.addEventListener("click", () =>{
     navMenu.classList.toggle("nav-menu_visible");
 });
-// Pinta las tarjetas en el DOM
+// *******Pinta las tarjetas en el DOM*******
 function crearTarjetas(peliculas){
     const container = document.querySelector('.container')
     peliculas.forEach(films => {   
@@ -22,7 +20,9 @@ function crearTarjetas(peliculas){
     `});
     console.log(data.films);
 }
-// Imprime la info completa *** actualmente sin estilo y escondida.
+crearTarjetas(data.films);
+
+// ***Imprime la info completa *** actualmente sin estilo y escondida.
 function infoMovie(info){
     const infoMovies = document.querySelector('.info-movies')
     info.forEach(films =>{
@@ -33,9 +33,9 @@ function infoMovie(info){
             <p> ${films.description}</p>
             <p>${films.director}</p>
             <p>${films.producer}</p>
-             `
-    })
+    `})
 }
+infoMovie(data.films);
 // Mostrar la info completa en el DOM aún no funciona
 /* function mostrarInfo(){
     document.getElementById('info-movies').style.display = 'block';
@@ -43,11 +43,7 @@ function infoMovie(info){
 const movies = document.getElementById('movies-link');
 movies.addEventListener('click', mostrarInfo); */
 
-// Filtrar directores:
-/* const select = document.getElementById('director');//identifica al elemento 'director'
-select.addEventListener('change', (item) => {
-    // filtrarData();
-    const filtrarData = data.films.filter(dato => dato.director == item.target.value)
-console.log(filtrarData);  
-}) */
+// *******Filtrar directores*******
+const select = document.getElementById('director');//identifica al elemento 'director'
+select.addEventListener('change', filtrarDirector);
 
