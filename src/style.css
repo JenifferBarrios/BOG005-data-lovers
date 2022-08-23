@@ -3,12 +3,10 @@
     margin: 0;
     box-sizing: border-box;  
 }
-
 body {
     background-color: #79cbce72;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
 .header {
     background-color: #5ec7d2f0;
     height: 150px;
@@ -20,27 +18,23 @@ body {
     border-left: 4px solid rgb(228, 127, 25);
     border-top: 4px solid rgb(228, 127, 25);  
 }
-
 .nav {
     display: flex;
     justify-content: space-between;
     max-width: 992px;
     margin: 0 auto; 
 }
-
 .nav-menu-link {
     color: rgb(78, 73, 73);
     text-decoration: none;
     border-radius: 6px;
     align-items: center;
 }
-
 .header-nav-logo {
     margin-left: auto;
     height: 150px;
     width: 150px;
 }
-
 .nav-titulo-pagina {
     font-size: 60px;
     line-height: 20px;
@@ -49,7 +43,6 @@ body {
     margin-top: 40px;
     margin-right: 2px; 
 }
-
 .nav-menu {
     display: flex;
     padding-top: 70px;
@@ -59,24 +52,20 @@ body {
     margin: 0 auto;
     list-style: none;
 }
-
 .nav-menu-item {
     font-size: 25px;
     margin: 0 10px;
     line-height: 20px;
     width: max-content;
 }
-
 .nav-menu-link:hover {
-    background-color: #b5eff8;
-    transition: 0.5s;
+    background-color: #d3b1a4d4;
+    transition: 1s;
 }
-
 .nav-menu-link {
     padding: 8px 12px;
-    border-radius: 3px;
+    border-radius: 13px;
 }
-
 .nav-toggle {
     color: rgb(66, 60, 60);
     background: none;
@@ -86,67 +75,62 @@ body {
     display: none;
     cursor: pointer;
 }
-
 .main {
-    height: 100px;
-    width: 100%;
+    width: min-content;
 }
-
-.main> .present {
-    margin-top: 140px;
-    margin-left: 50px;
+.present {
+    margin-top: 150px;
     padding: 20px 80px;
-    /* background-color: #d3b1a472; */
+    background-color: #d3b1a472;
     border-radius: 10px;
     text-align: justify;
-    width: 90%;
+    width: 120%;
+    font-size: 25px;
+    font-style: italic;
+    border-bottom: 10px dashed rgb(228, 127, 25);
+    color: rgb(103, 97, 97);
 }
-
-.present> p {
-    font-size: 20px;
-    padding: 5px;
-    color: rgb(85, 82, 82);
-}
-
 /* TARJETA DISPOSITIVO GRANDE */
-
 .container {
     /* GRID */
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 40px 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
+    width: 50%;
+    max-width: 1200px;
+    margin-left: 80px;
+    padding-top: 40px;
+    gap: 50px;
 }
-
 .card {
     background-color: #d3b1a4;
+    transition: 1s;
     border-radius: 8px; 
     border-left: 4px solid rgb(228, 127, 25);
-    border-top: 4px solid rgb(228, 127, 25);  
+    border-top: 4px solid rgb(228, 127, 25); 
+    width: 300px; 
 }
-.card-image {
-    height: 170px;
-    margin-bottom: 15px;
-    background-size: cover;
-    border-radius: 15px 15px 0 0;
+.card:hover {
+    background-color: #5ec7d2f0;
 }
-
-.card h2 {
+.posters {
+    display: flex;
+    height: 300px;
+    width: auto;
+    margin-left: 35px;
+    border: solid 0.3em;
+    border-color: rgb(228, 127, 25);
+    border-radius: 15px;   
+}
+.titulo {
     padding: 10px;
     margin-left: 10px;
+    font-size: 25px;
+    color: rgb(69, 67, 67);
+    text-align: center;
 }
 .card p {
     padding: 10px;
-}
-
-.card p {
-    padding: 10px;
-}
-
-.card a {
+}.card a {
     background-color: rgb(44, 42, 42);
     color: rgb(189, 227, 248);
     padding: 15px 20px;
@@ -156,34 +140,35 @@ body {
     margin: 8px 10px;
     border-radius: 10px;
 }
-
-/* DISPOSITIVOS DE TAMAÑO MENOR A 768px */
-
+.info-movies {
+    display: none;
+}
+/* .info-movies-visible {
+    display: block;
+} */
+/* =============================================================== 
+          DISPOSITIVOS DE TAMAÑO MENOR A 768px 
+=============================================================== */
 @media (max-width: 768px ) {
-    
-    body {
-        padding-top: 15px;
+    .main {
+        width: auto;
     }
-
     .header {
         height: 120px;
         border-bottom-left-radius: 20px;
         overflow: hidden;
     }
-
     .header-nav-logo {
         height: 100px;
         width: 100px; 
         margin-left: -25px;
     }
-
     .nav-titulo-pagina {
         font-size: 30px;
         text-align: center;
         padding: 5px;
         margin-top: 7px;
     }
-
     .nav-menu {
         flex-direction: column;
         align-items: center;
@@ -198,74 +183,55 @@ body {
         height: calc(40% - 20px);
         overflow-y: auto;
         left: 100%;
-        transition: left 0.3s;
+        transition: left 1s;
     }
-
     .nav-menu-item {
         line-height: 10px;
     }
-
     .nav-menu-link:hover {
         background: none;
-        color: rgb(193, 242, 244);
+        color: #5ec7d2f0;;
     }
-
     .nav-toggle {
         display: block;
         font-size: 25px;
         margin-top: 2px;
     }
-
     .nav-menu_visible {
         left: 0;
     }
-
-    .main {
-        height: 100px;
-        width: 100%;
-    }
-
     .present> p {
+        font-size: 15px;
         width: 100%;
         margin: 5px;
-    }
-    
-    .main> .present {
-        margin-top: 100px;
-        margin-left: 20px;
         padding: 10px;
-        width: 80%;
-        /* border-radius: 10px; */
+    }
+    .present {
+        margin-top: 100px;
+        margin-left: auto;
+        padding: 10px;
+        width: 100%;
         text-align: justify;
     }
-
 /* TARJETAS DISPOSITIVO PEQUE*/
     .container {
         /* FLEXBOX */
         display: flex;
-        justify-content: center;
-        /* margin-top: 20px; */
-        margin: 0 15px;
         flex-wrap: wrap;
-        padding-top: 10px;
+        text-align: justify;
     }
     .card {
-        /* FLEXBOX */
-        /* width: 220px; */
-        /* height: 370px; */
-        margin: 10px;
-        /* margin-bottom: 10px; */
-        width: auto;
+        margin: auto;
+        padding: 15px;
+        align-items: center;
+        width: 300px;
         height: auto;
-        border-radius: 4px; 
+        border-radius: 14px; 
     }
-
-    .card-image {
-        height: 150px;
-        margin: 10px;
-        /* border-radius: 10px 10px 0 0; */
+    .posters {
+        margin-left: 0;
+        padding: 5px;
     }
-
     .card h2 {
         padding: 5px;
         margin-left: 5px;
