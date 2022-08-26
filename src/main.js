@@ -1,5 +1,5 @@
 import data from './data/ghibli/ghibli.js';
-import { filtrarDirector, sortData } from './data.js';
+import { filtrarDirector, filtrarProductor } from './data.js';
 
 // *******Despliega menú hamburguesa*******
 const navToggle = document.querySelector(".nav-toggle");
@@ -25,11 +25,20 @@ crearTarjetas(data.films);//llama a la function crearTarjetas
 
 // *******Filtrar directores*******
 const select = document.getElementById('director');//identifica al elemento 'director'
-select.addEventListener('change', (e)=>{
-    let selectValue = e.target.value // evento guardamos el valor de select
+select.addEventListener('change', (event)=>{
+    let selectValue = event.target.value // evento guardamos el valor de select
     let arrFilterDirector= filtrarDirector(selectValue, data.films) // Mandamos dos argumentos 1 Nombre del director y 2 data
     console.log(arrFilterDirector)
     crearTarjetas(arrFilterDirector) // reusamos la fn que pinta las tarjetas 
+});
+
+// *******Filtrar productores*******
+const select2 = document.getElementById('productor');//Identifica al elemento 'productor'
+select2.addEventListener('change', (evento)=>{
+    let selectValue = evento.target.value 
+    let arrFilterProductor = filtrarProductor(selectValue, data.films)
+    console.log(arrFilterProductor)
+    crearTarjetas(arrFilterProductor)
 });
 
 // *******Ordenar por año de estreno*******
