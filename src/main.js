@@ -1,5 +1,6 @@
 import data from './data/ghibli/ghibli.js';
-import { filtrarDirector, sortData } from './data.js';
+import { filtrarDirector } from './data.js';
+import { filtrarProductor} from './data.js';
 
 // *******Despliega menú hamburguesa*******
 const navToggle = document.querySelector(".nav-toggle");
@@ -24,13 +25,25 @@ function crearTarjetas(peliculas){
 crearTarjetas(data.films);//llama a la function crearTarjetas
 
 // *******Filtrar directores*******
-const select = document.getElementById('director');//identifica al elemento 'director'
-select.addEventListener('change', (e)=>{
-    let selectValue = e.target.value // evento guardamos el valor de select
-    let arrFilterDirector= filtrarDirector(selectValue, data.films) // Mandamos dos argumentos 1 Nombre del director y 2 data
-    console.log(arrFilterDirector)
-    crearTarjetas(arrFilterDirector) // reusamos la fn que pinta las tarjetas 
-});
+const select = document.getElementById("director")
+select.addEventListener("change",(e)=>{
+    let selectValue = e.target.value ;
+    let arrFilterdirector = filtrarDirector(selectValue,data.films)
+// console.log(arrFilterdirector)
+crearTarjetas(arrFilterdirector)
+})
+
+// filtrar productores
+const select2= document.getElementById("producer")
+select2.addEventListener("change",(evento)=>{
+    let selectValue2 = evento.target.value ;
+    let arrFilterProducer = filtrarProductor(selectValue2,data.films)
+    crearTarjetas(arrFilterProducer)
+    // console.log(arrFilterProducer)
+})
+
+
+
 
 // *******Ordenar por año de estreno*******
 // const button = document.getElementById('annio');
