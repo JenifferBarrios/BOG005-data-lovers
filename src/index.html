@@ -20,46 +20,40 @@
           </button>
           <ul class="nav-menu nav-menu_visible">
             <li class="nav-menu-item"><a href="#" class="nav-menu-link">Inicio</a></li>
-            <li class="nav-menu-item"><a href="#" target="_blank" class="nav-menu-link">Ghibli</a></li>
-            <li class="nav-menu-item"><a href="#movies" class="nav-menu-link" id="movies-link">Películas</a></li>
-            <li class="nav-menu-item"><a href="#" class="nav-menu-link">Fotos</a></li>
+            <li class="nav-menu-item"><a href="#" class="nav-menu-link">Ghibli</a></li>
+            <li class="nav-menu-item"><a href="#" class="nav-menu-link">Películas</a></li>
+            <article class="filter"> 
+              <li class="nav-menu-item">
+                <select name="director" id="director" class="director filter">
+                  <option value="">Director</option>
+                  <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+                  <option value="Isao Takahata">Isao Takahata</option>
+                  <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
+                  <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+                  <option value="Gorō Miyazaki">Gorō Miyazaki</option>
+                  <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+                </select>
+              </li>
+              <li class="nav-menu-item">
+                <select name="productor" id="productor" class="productor filter">
+                  <option value="">Productor</option>
+                  <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+                  <option value="Isao Takahata">Isao Takahata</option>
+                  <option value="Toru Hara">Toru Hara</option>
+                  <option value="Toshio Suzuki">Toshio Suzuki</option>
+                  <option value="Yoshiaki Nishimura">Yoshiaki Nishimura</option>
+                </select>
+              </li>
+            </article>
           </ul>
-          <p>
-            <select name="director" id="director" class="director">
-              <option value="">Escoge un director</option>
-              <option value="Hayao Miyazaki">Hayao Miyazaki</option>
-              <option value="Isao Takahata">Isao Takahata</option>
-              <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
-              <option value="Hiroyuki Morita">Hiroyuki Morita</option>
-              <option value="Gorō Miyazaki">Gorō Miyazaki</option>
-              <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
-            </select>
-          </p>
-          <p>
-            <select name="productor" id="productor" class="productor">
-              <option value="">Escoge un productor</option>
-              <option value="Hayao Miyazaki">Hayao Miyazaki</option>
-              <option value="Isao Takahata">Isao Takahata</option>
-              <option value="Toru Hara">Toru Hara</option>
-              <option value="Toshio Suzuki">Toshio Suzuki</option>
-              <option value="Yoshiaki Nishimura">Yoshiaki Nishimura</option>
-            </select>
-          </p>
-          <p>
-            <!-- <button type="button" id="annio" class="annio">año de estreno</button> -->
-          </p>
         </nav>
+        <section class="present">
+          <p>Visita las películas más bellas y premiadas del Estudio. Haz click para conocer más y antojarte de verlas!</p>
+        </section>
       </header>
       <main class="main">
-        <section class="present">
-          <p>Visita las películas más bellas y premiadas de Ghibli. Haz click en los botones para conocer más y antojarte de verlas!</p>
-        </section>
         <section class="container">
           <!-- Aquí se pintan las tarjetas con el js -->
-        </section>
-        <section class="info-movies info-movies-visible">
-          <!-- Aquí se pinta la info detallada de las películas con el js -->
-          <h2 id="movies">GHIBLI MOVIES</h2>
         </section>
       </main>
     <script defer src="main.js" type="module"></script>

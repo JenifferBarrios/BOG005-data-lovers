@@ -17,7 +17,6 @@ function crearTarjetas(peliculas){
     <article class="card">
             <h2 class="titulo">${films.title}</h2>
             <img class="posters" src="${films.poster}"
-            <button><a href="https://www.ghiblicollection.com/product/my-neighbor-totoro?product_id=6644" target="_blank">Conoce Mas</a></button>
           </article>
     `});
 }
