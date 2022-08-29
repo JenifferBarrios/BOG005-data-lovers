@@ -1,4 +1,5 @@
 import { filtrarDirector} from '../src/data.js';
+
 const dataMuestra =[
   {
     "id": "2baf70d1-42bb-4437-b551-e5fed5a87abe",
@@ -42,7 +43,7 @@ const dataMuestra =[
   },
 ]
 describe ("filtrarDirector", ()=>{
-  it.only('Deberia mostrar el nombre de una pelicula de un director',()=>{
+  it('Deberia mostrar el nombre de una pelicula de un director',()=>{
     const dataFiltrada = [{
       "id": "2baf70d1-42bb-4437-b551-e5fed5a87abe",
       "title": "Castle in the Sky",
@@ -78,3 +79,4 @@ describe ("filtrarDirector", ()=>{
 
   })
 
+  

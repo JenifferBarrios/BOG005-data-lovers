@@ -34,7 +34,14 @@ YO COMO visitante de la web Ghibli Lovers QUIERO visualizar unas tarjetas con in
 3. [] La tabla ubicada en la segunda pantalla contiene la información de la película: Director, año de lanzamiento, personajes principales.
 4. [] La tabla tiene un estilo visual acorde al estilo definido en la página principal de Ghibli Lovers
 
+## 3. Historia de Usuario III:
+YO COMO visitante de la web Ghibli Lovers QUIERO ordenar las peliculas de estudio Ghibli segun las fechas de produccion PARA visualizar en pantalla las peliculas segun el año que escoja
 
+### Criterios de aceptación
+1. [] Existe un selector donde el usuario puede escojer el año de producccion de las peliculas .
+2. [] El selector muestra los diferentes años en los que se produjeron peliculas por Estudios Ghibli
+3. [] Al momento que el usuario escoja un año, se muestra en pantalla la(as)peliculas producidas en el mismo
+4. [] 
 ***
 
 ### Definición de terminado

@@ -1,6 +1,7 @@
 import data from './data/ghibli/ghibli.js';
 import { filtrarDirector } from './data.js';
 import { filtrarProductor} from './data.js';
+import {ordenPeliculas} from './data.js';
 
 // *******Despliega menú hamburguesa*******
 const navToggle = document.querySelector(".nav-toggle");
@@ -42,9 +43,12 @@ select2.addEventListener("change",(evento)=>{
     // console.log(arrFilterProducer)
 })
 
+// *******Ordenar peliculas *******
 
+const selectAZ = document.getElementById("ordenAZ")
+selectAZ.addEventListener("change",(evento) =>{
+    let eventoAZ = evento.target.value ;
+    let arrOrdenar = ordenPeliculas (eventoAZ,data.films)
+    crearTarjetas(arrOrdenar)
+} )
 
-
-// *******Ordenar por año de estreno*******
-// const button = document.getElementById('annio');
-// button.addEventListener('click', sortData);
