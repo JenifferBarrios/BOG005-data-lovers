@@ -1,5 +1,6 @@
 // *******Esta función filtra la data por director*******
 export function filtrarDirector (directorName,data) {
+  console.log(data)
   const filtrarData = data.filter(function(datoAFiltrar){
     return datoAFiltrar.director === directorName;
   })
@@ -31,5 +32,9 @@ export function ordenPeliculas (opcion,data){
       return ordenAZ.reverse()
     }
     }
-  
+export function calculo(data,director){
+  const peliculasDirector =filtrarDirector(director,data)
+  const porcentaje = Math.round((peliculasDirector.length/data.length)*100)
+  return porcentaje
+}
   

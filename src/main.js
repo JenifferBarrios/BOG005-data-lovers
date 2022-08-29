@@ -1,7 +1,6 @@
 import data from './data/ghibli/ghibli.js';
-import { filtrarDirector } from './data.js';
-import { filtrarProductor} from './data.js';
-import {ordenPeliculas} from './data.js';
+import { filtrarDirector,filtrarProductor,ordenPeliculas,calculo } from './data.js';
+
 
 // *******Despliega menú hamburguesa*******
 const navToggle = document.querySelector(".nav-toggle");
@@ -30,7 +29,7 @@ const select = document.getElementById("director")
 select.addEventListener("change",(e)=>{
     let selectValue = e.target.value ;
     let arrFilterdirector = filtrarDirector(selectValue,data.films)
-// console.log(arrFilterdirector)
+console.log(calculo(data.films,selectValue))
 crearTarjetas(arrFilterdirector)
 })
 
@@ -51,4 +50,5 @@ selectAZ.addEventListener("change",(evento) =>{
     let arrOrdenar = ordenPeliculas (eventoAZ,data.films)
     crearTarjetas(arrOrdenar)
 } )
+//***** calculo****
 
