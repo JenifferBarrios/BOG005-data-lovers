@@ -29,7 +29,7 @@ const select = document.getElementById("director")
 select.addEventListener("change",(e)=>{
     let selectValue = e.target.value ;
     let arrFilterdirector = filtrarDirector(selectValue,data.films)
-//console.log(calculo(data.films,selectValue))
+console.log(calculo(data.films,selectValue))
 crearTarjetas(arrFilterdirector)
 })
 
@@ -51,3 +51,24 @@ selectAZ.addEventListener("change",(evento) =>{
     crearTarjetas(arrOrdenar)
 } )
 //***** calculo**** todo depende de como quiero que se vea en pantalla
+function crearPorcentaje () {
+  const calculo = document.querySelector('.calculo')
+    calculo.innerHTML= ""
+    peliculas.forEach(films => {   
+    calculo.innerHTML += `
+    <tabla class="tabla">
+    <thead>
+      <tr>
+        <th>Director</th>
+        <th>% de Peliculas realizadas</th>
+      </tr>
+    </thead>
+    <tbody class="valores" id="valores">
+      <tr>
+        <th>director</th>
+      </tr>
+    </tbody>
+    </tabla>
+    `});
+}
+crearPorcentaje(porcentaje)

@@ -36,4 +36,12 @@ export function calculo(data,director){
   const porcentaje = Math.round((peliculasDirector.length/data.length)*100)
   return porcentaje
 }
-  
+// export const filtrarDirector = (datos)=> {
+//   const porcentajePeliculasd = datos ["films"].map(elemento => elemento.director);
+//   return porcentajePeliculasd;
+// }
+// export const crearTarjetas = (datos) => {
+//   const films = datos ["films"].map (elemento => elemento );
+//   return films;
+// }                                                       
+
