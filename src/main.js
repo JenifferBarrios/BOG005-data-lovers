@@ -29,7 +29,7 @@ const select = document.getElementById("director")
 select.addEventListener("change",(e)=>{
     let selectValue = e.target.value ;
     let arrFilterdirector = filtrarDirector(selectValue,data.films)
-console.log(calculo(data.films,selectValue))
+//console.log(calculo(data.films,selectValue))
 crearTarjetas(arrFilterdirector)
 })
 
@@ -50,5 +50,4 @@ selectAZ.addEventListener("change",(evento) =>{
     let arrOrdenar = ordenPeliculas (eventoAZ,data.films)
     crearTarjetas(arrOrdenar)
 } )
-//***** calculo****
-
+//***** calculo**** todo depende de como quiero que se vea en pantalla

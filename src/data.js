@@ -1,7 +1,6 @@
 // *******Esta función filtra la data por director*******
 export function filtrarDirector (directorName,data) {
-  console.log(data)
-  const filtrarData = data.filter(function(datoAFiltrar){
+    const filtrarData = data.filter(function(datoAFiltrar){
     return datoAFiltrar.director === directorName;
   })
 return filtrarData;
@@ -18,10 +17,10 @@ return filtrarData2
 export function ordenPeliculas (opcion,data){
   const copiaData = [...data]
   const ordenAZ  = copiaData.sort (function(a,b){
-      if (a.director > b.director){
+      if (a.title > b.title){
         return 1;
       }
-      if (a.director < b.director){
+      if (a.title < b.title){
         return -1;
       }
       return 0;

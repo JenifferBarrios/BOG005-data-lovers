@@ -35,10 +35,10 @@ YO COMO visitante de la web Ghibli Lovers QUIERO visualizar unas tarjetas con in
 4. [] La tabla tiene un estilo visual acorde al estilo definido en la página principal de Ghibli Lovers
 
 ## 3. Historia de Usuario III:
-YO COMO visitante de la web Ghibli Lovers QUIERO ordenar las peliculas de estudio Ghibli segun las fechas de produccion PARA visualizar en pantalla las peliculas segun el año que escoja
+YO COMO visitante de la web Ghibli Lovers QUIERO ordenar las peliculas de estudio Ghibli segun el Titulo de las Peliculas PARA visualizar en pantalla las peliculas en orden alfabetico 
 
 ### Criterios de aceptación
-1. [] Existe un selector donde el usuario puede escojer el año de producccion de las peliculas .
+1. [] Existe un selector donde el usuario puede escojer el titulo de las peliculas y ordenarlas segun su orden alfabetico.
 2. [] El selector muestra los diferentes años en los que se produjeron peliculas por Estudios Ghibli
 3. [] Al momento que el usuario escoja un año, se muestra en pantalla la(as)peliculas producidas en el mismo
 4. [] 
