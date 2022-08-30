@@ -27,7 +27,8 @@ const select = document.getElementById('director');//identifica al elemento 'dir
 select.addEventListener('change', (event)=>{
     let selectValue = event.target.value // evento guardamos el valor de select
     let arrFilterDirector= filterDirector(selectValue, data.films) // Mandamos dos argumentos 1 Nombre del director y 2 data
-    // console.log(arrFilterDirector)
+    console.log(arrFilterDirector)
+    console.log(percentDirector(data.films,selectValue))
     createCards(arrFilterDirector) // reusamos la fn que pinta las tarjetas 
 });
 
@@ -36,7 +37,7 @@ const select2 = document.getElementById('producer');//Identifica al elemento 'pr
 select2.addEventListener('change', (e)=>{
     let selectValue = e.target.value 
     let arrFilterProducer = filterProducer(selectValue, data.films)
-    // console.log(arrFilterProducer)
+    console.log(arrFilterProducer)
     createCards(arrFilterProducer)
 });
 
