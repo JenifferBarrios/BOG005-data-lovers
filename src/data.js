@@ -1,26 +1,42 @@
+
 // *******Esta función filtra la data por director*******
-export function filtrarDirector(directorName, data){ //string Nombre del director y un arreglo toda la data
-  const filtrarData = data.filter(function(datoAFiltrar){
-    return datoAFiltrar.director === directorName;
+export function filterDirector(directorName, data){ //string Nombre del director y un arreglo toda la data
+  const filterData = data.filter(function(filterDirector){
+    return filterDirector.director === directorName;
   });
-  return filtrarData;
+  return filterData;
 }
 
 // *******Esta función filtra la data por productor*******
-export function filtrarProductor(productorName, data){
-  const filtrarData2 = data.filter(function(datoProductor){
-    return datoProductor.producer === productorName;
+export function filterProducer(producerName, data){
+  const filterData2 = data.filter(function(filterProducer){
+    return filterProducer.producer === producerName;
   });
-   return filtrarData2;   
+   return filterData2;   
 }
 
-/* sortData(data, sortBy, sortOrder): esta función sort u ordenar recibe tres parámetros. El primer parámetro,
- data, nos entrega los datos.
-El segundo parámetro, sortBy, nos dice con respecto a cuál de los campos de la data se quiere ordenar. 
-El tercer parámetro, sortOrder, indica si se quiere ordenar de manera ascendente o descendente. */
-export function sortData(){
-  //const ordenarData = data.films.sort();
-  return ordenarData;
+/* *******Esta función ordena la data por título******* */
+export function orderMovies(option, data){
+  const copiaData = [...data]
+  const ordenAZ = copiaData.sort(function(a,b){
+    if(a.title > b.title){
+      return 1;
+    }
+    if(a.title < b.title){
+      return -1;
+    }
+    return 0;
+  })
+  if(option == 'AZ'){
+    return ordenAZ;
+  }else{
+    return ordenAZ.reverse();
+  }
 }
 /* computeStats(data): la función compute o calcular, nos permitirá hacer cálculos estadísticos básicos para
  ser mostrados de acuerdo a la data proporcionada.*/
+ export function percentDirector(data, director){
+  const filmsDirector = filterDirector(director, data)
+  const percent = Math.round((filmsDirector.length / data.length) * 100)
+  return percent;
+ }
