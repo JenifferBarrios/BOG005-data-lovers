@@ -17,43 +17,53 @@
             <i class="fas fa-bars"></i>
           </button>
           <ul class="nav-menu nav-menu_visible">
-            <li class="nav-menu-item"><a href="#" class="nav-menu-link">Inicio</a></li>
-            <li class="nav-menu-item"><a href="#" class="nav-menu-link">Ghibli</a></li>
-            <li class="nav-menu-item"><a href="#" class="nav-menu-link">Películas</a></li>
+            <li class="nav-menu-item"><i class="fa-brands fa-fort-awesome" id="icons"></i><a href="#" class="nav-menu-link">Inicio</a></li>
+            <li class="nav-menu-item"><i class="fa-solid fa-film" id="icons"></i><a href="#" class="nav-menu-link">Sobre Ghibli</a></li>
+            <li class="nav-menu-item"><i class="fa-solid fa-photo-film" id="icons"></i><a href="#" class="nav-menu-link">posters</a></li>
+            <li class="nav-menu-item"><i class="fa-solid fa-code-fork" id="icons"></i><a href="#" class="nav-menu-link">Sobre nosotras</a></li>
           </ul>
         </nav>
         <!-- <section class="present">
           <p>(escoger la palabra adecuada) las películas más bellas y premiadas del Estudio. Haz click para conocer más y antojarte de verlas!</p>
         </section> -->
-        <section class="selectors">
-          <label for="director" class="filterLabel">Escoge un director:</label>
-          <select name="director" id="director" class="director filter">
-            <option value="">Director</option>
-            <option value="Hayao Miyazaki">Hayao Miyazaki</option>
-            <option value="Isao Takahata">Isao Takahata</option>
-            <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
-            <option value="Hiroyuki Morita">Hiroyuki Morita</option>
-            <option value="Gorō Miyazaki">Gorō Miyazaki</option>
-            <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
-          </select>
-          <label for="producer" class="filterLabel">Escoge un productor:</label>
-          <select name="producer" id="producer" class="producer filter">
-            <option value="">Productor</option>
-            <option value="Hayao Miyazaki">Hayao Miyazaki</option>
-            <option value="Isao Takahata">Isao Takahata</option>
-            <option value="Toru Hara">Toru Hara</option>
-            <option value="Toshio Suzuki">Toshio Suzuki</option>
-            <option value="Yoshiaki Nishimura">Yoshiaki Nishimura</option>
-          </select>
-        </section>
-        <section>
-          <select name="orderAZ" id="orderAZ" class="orderAZ">
-            <option value="AZ">A-Z</option>
-            <option value="ZA">Z-A</option>
-          </select>
-        </section>
       </header>
       <main class="main">
+        <section class="selectors"> 
+          <h2 id="label-main">Ordena las películas por:</h2> 
+          <div class="select-content">
+            <article id="artic-direct">
+              <label for="director" class="filterLabel">Directores:</label>
+              <select name="director" id="director" class="director filter">
+                <option value="">--</option>
+                <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+                <option value="Isao Takahata">Isao Takahata</option>
+                <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
+                <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+                <option value="Gorō Miyazaki">Gorō Miyazaki</option>
+                <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+              </select>
+            </article>
+            <article id="artic-az"> 
+              <label for="orderAZ" id="label-alfa">Alfabéticamente</label>
+              <select name="orderAZ" id="orderAZ" class="orderAZ filter">
+                <option value="AZ">--</option>
+                <option value="AZ">A-Z</option>
+                <option value="ZA">Z-A</option>
+              </select><br>
+            </article>
+            <article id="artic-produc">
+              <label for="producer" class="filterLabel">Productores:</label>
+              <select name="producer" id="producer" class="producer filter">
+                <option value="">--</option>
+                <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+                <option value="Isao Takahata">Isao Takahata</option>
+                <option value="Toru Hara">Toru Hara</option>
+                <option value="Toshio Suzuki">Toshio Suzuki</option>
+                <option value="Yoshiaki Nishimura">Yoshiaki Nishimura</option>
+              </select>
+            </article>
+          </div>
+        </section> 
         <section class="container" id="allCards">
           <!-- Aquí se pintan las tarjetas con el js -->
         </section>
