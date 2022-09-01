@@ -1,6 +1,8 @@
-import { filtrarDirector} from '../src/data.js';
 
-const dataMuestra =[
+import { filterDirector, filterProducer} from '../src/data.js';
+
+const dataSample =[
+
   {
     "id": "2baf70d1-42bb-4437-b551-e5fed5a87abe",
     "title": "Castle in the Sky",
@@ -42,9 +44,11 @@ const dataMuestra =[
     "rt_score": "97",    
   },
 ]
-describe ("filtrarDirector", ()=>{
+
+describe ("filterDirector", ()=>{
   it('Deberia mostrar el nombre de una pelicula de un director',()=>{
-    const dataFiltrada = [{
+    const filteredData = [{
+
       "id": "2baf70d1-42bb-4437-b551-e5fed5a87abe",
       "title": "Castle in the Sky",
       "description": "The orphan Sheeta inherited a mysterious crystal that links her to the mythical sky-kingdom of Laputa. With the help of resourceful Pazu and a rollicking band of sky pirates, she makes her way to the ruins of the once-great civilization. Sheeta and Pazu must outwit the evil Muska, who plans to use Laputa's science to make himself ruler of the world.",
@@ -74,9 +78,24 @@ describe ("filtrarDirector", ()=>{
       "release_date": "1989",
       "rt_score": "96",    
     },]
-    expect(filtrarDirector("Hayao Miyazaki",dataMuestra)).toEqual(dataFiltrada);
+
+    expect(filterDirector("Hayao Miyazaki",dataSample)).toEqual(filteredData);
+  })
   })
 
-  })
+  describe ("filterProducer", ()=>{
+    it('Deberia mostrar el nombre de una pelicula de un productor',()=>{
+      const filteredData = [{
+        "id": "2baf70d1-42bb-4437-b551-e5fed5a87abe",
+        "title": "Castle in the Sky",
+        "description": "The orphan Sheeta inherited a mysterious crystal that links her to the mythical sky-kingdom of Laputa. With the help of resourceful Pazu and a rollicking band of sky pirates, she makes her way to the ruins of the once-great civilization. Sheeta and Pazu must outwit the evil Muska, who plans to use Laputa's science to make himself ruler of the world.",
+        "director": "Hayao Miyazaki",
+        "producer": "Isao Takahata",
+        "poster": "https://static.wikia.nocookie.net/studio-ghibli/images/c/c1/Castle_in_the_Sky.jpg",
+        "release_date": "1986",
+        "rt_score": "95",
+      },]
+      expect(filterProducer("Isao Takahata",dataSample)).toEqual(filteredData);
+    })
+    })
 
-  

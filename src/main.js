@@ -1,5 +1,6 @@
 import data from './data/ghibli/ghibli.js';
-import { filtrarDirector, filtrarProductor, ordenPeliculas, calculo } from './data.js';
+
+import { filterDirector, filterProducer, orderMovies, percentDirector} from './data.js';
 
 
 // *******Despliega menú hamburguesa*******
@@ -10,23 +11,47 @@ navToggle.addEventListener("click", () => {
 });
 
 // *******Pinta las tarjetas en el DOM*******
-function crearTarjetas(peliculas) {
+
+function createCards(movies){
     const container = document.querySelector('.container')
-    container.innerHTML = ""
-    peliculas.forEach(films => {
-        container.innerHTML += `
+    container.innerHTML= ""
+    movies.forEach(films => {   
+    container.innerHTML += `
     <article class="card">
             <h2 class="titulo">${films.title}</h2>
             <img class="posters" src="${films.poster}"
-            <button><a href="https://www.ghiblicollection.com/product/my-neighbor-totoro?product_id=6644" target="_blank">Conoce Mas</a></button>
-    </article>
-             
+          </article>
+
     `});
 
 }
-crearTarjetas(data.films);//llama a la function crearTarjetas
+createCards(data.films);//llama a la function crearTarjetas
 
 // *******Filtrar directores*******
+
+
+// *******Filtrar productores*******
+const select2 = document.getElementById('producer');//Identifica al elemento 'productor'
+select2.addEventListener('change', (e)=>{
+    let selectValue = e.target.value 
+    let arrFilterProducer = filterProducer(selectValue, data.films)
+    console.log(arrFilterProducer)
+    createCards(arrFilterProducer)
+});
+
+// *******Ordenar alfabéticamente por título de película*******
+const selectAZ = document.getElementById("orderAZ");
+selectAZ.addEventListener("change", (evento)=>{
+    let eventAZ = evento.target.value;
+    let arrOrder = orderMovies(eventAZ, data.films);
+    createCards(arrOrder);
+})
+
+// ***Imprime el porcentaje en pantalla***
+function showPercent(director){
+document.getElementById('percent').innerHTML = percentDirector(data.films, director);
+}
+=======
 const select = document.getElementById("director")
 select.addEventListener("change", (e) => {
     let selectValue = e.target.value;
@@ -57,5 +82,6 @@ selectAZ.addEventListener("change", (evento) => {
 function mostrarPorcentaje  (director) {
       document.getElementById("porcentaje").innerHTML = calculo(data.films,director)
 }
+
 
 

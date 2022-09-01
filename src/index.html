@@ -11,18 +11,16 @@
   <body>
       <header class="header">
         <nav class="nav">
-          <hgroup class="nav-titulo-pagina">
-            <h1 class="nav-titulo-pagina">Ghibli Lovers</h1>
-          </hgroup>
+            <h1 class="nav-title-page">GhibliLovers</h1>
           <img src="imagenes/totoro1.png" class="header-nav-logo" alt="totoro-Logo">
           <button class="nav-toggle" id="button">
             <i class="fas fa-bars"></i>
           </button>
           <ul class="nav-menu nav-menu_visible">
-            <li class="nav-menu-item"><a href="#" class="nav-menu-link">Inicio</a></li>
-            <li class="nav-menu-item"><a href="#" target="_blank" class="nav-menu-link">Ghibli</a></li>
-            <li class="nav-menu-item"><a href="#movies" class="nav-menu-link" id="movies-link">Películas</a></li>
-            <li class="nav-menu-item"><a href="#" class="nav-menu-link">Fotos</a></li>
+            <li class="nav-menu-item"><i class="fa-brands fa-fort-awesome" id="icons"></i><a href="#" class="nav-menu-link">Inicio</a></li>
+            <li class="nav-menu-item"><i class="fa-solid fa-film" id="icons"></i><a href="#" class="nav-menu-link">Sobre Ghibli</a></li>
+            <li class="nav-menu-item"><i class="fa-solid fa-photo-film" id="icons"></i><a href="#" class="nav-menu-link">posters</a></li>
+            <li class="nav-menu-item"><i class="fa-solid fa-code-fork" id="icons"></i><a href="#" class="nav-menu-link">Sobre nosotras</a></li>
           </ul>
           <p>
             <select name="director" id="director" class="director">
@@ -54,23 +52,58 @@
           <p>
             <!-- <button type="button" id="annio" class="annio">año de estreno</button> -->
           </p>
+
         </nav>
+        <!-- <section class="present">
+          <p>(escoger la palabra adecuada esto va en la pagina de presentacion) las películas más bellas y premiadas del Estudio. Haz click para conocer más y antojarte de verlas!</p>
+        </section> -->
       </header>
       <main class="main">
-        <section class="present">
-          <p>Visita las películas más bellas y premiadas de Ghibli. Haz click en los botones para conocer más y antojarte de verlas!</p>
-        </section>
-        <section class="porcentaje" id="porcentaje">
-          <p>Porcentaje de Peliculas realizadas por este Director</p>
-        </section>
-        <section class="container" id="container">
-          
-          <!-- Aquí se pintan las tarjetas con el js -->
+        <section class="selectors"> 
+          <h2 id="label-main">Ordena las películas por:</h2> 
+          <div class="select-content">
+            <article id="artic-direct">
+              <label for="director" class="filter-label">Directores:</label>
+              <select name="director" id="director" class="director filter">
+                <option value="">--</option>
+                <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+                <option value="Isao Takahata">Isao Takahata</option>
+                <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
+                <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+                <option value="Gorō Miyazaki">Gorō Miyazaki</option>
+                <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+              </select>
+            </article>
+            <article id="artic-az"> 
+              <label for="orderAZ" class="filter-label">A-Z</label>
+              <select name="orderAZ" id="orderAZ" class="orderAZ filter">
+                <option value="AZ">--</option>
+                <option value="AZ">A-Z</option>
+                <option value="ZA">Z-A</option>
+              </select><br>
+            </article>
+            <article id="artic-produc">
+              <label for="producer" class="filter-label">Productores:</label>
+              <select name="producer" id="producer" class="producer filter">
+                <option value="">--</option>
+                <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+                <option value="Isao Takahata">Isao Takahata</option>
+                <option value="Toru Hara">Toru Hara</option>
+                <option value="Toshio Suzuki">Toshio Suzuki</option>
+                <option value="Yoshiaki Nishimura">Yoshiaki Nishimura</option>
+              </select>
+            </article>
+          </div>
         </section>
 
-        <section class="info-movies info-movies-visible">
-          <!-- Aquí se pinta la info detallada de las películas con el js -->
-          <h2 id="movies">GHIBLI MOVIES</h2>
+        <section class="percent" id="percent">
+          <h2>Porcentaje de películas realizadas por este director: </h2>
+        </section> 
+        <section class="container" id="allCards">
+          <!-- Aquí se pintan las tarjetas con el js -->
+        </section>
+        <section class="calculation" id="calculation">
+
         </section>
         <section class="calculo" id="calculo">
          </section>
