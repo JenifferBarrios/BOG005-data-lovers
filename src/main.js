@@ -29,6 +29,7 @@ select.addEventListener('change', (event)=>{
     let arrFilterDirector= filterDirector(selectValue, data.films) // Mandamos dos argumentos 1 Nombre del director y 2 data
     console.log(arrFilterDirector)
     console.log(percentDirector(data.films,selectValue))
+    showPercent(selectValue)
     createCards(arrFilterDirector) // reusamos la fn que pinta las tarjetas 
 });
 
@@ -45,9 +46,11 @@ select2.addEventListener('change', (e)=>{
 const selectAZ = document.getElementById("orderAZ");
 selectAZ.addEventListener("change", (evento)=>{
     let eventAZ = evento.target.value;
-    let arrOrdenar = orderMovies(eventAZ, data.films);
-    createCards(arrOrdenar);
+    let arrOrder = orderMovies(eventAZ, data.films);
+    createCards(arrOrder);
 })
 
 // ***Imprime el porcentaje en pantalla***
-// document.getElementById('printPercent').textContent = 'dirigió '+ percentDirector.filterData + 'películas';
+function showPercent(director){
+document.getElementById('percent').innerHTML = percentDirector(data.films, director);
+}

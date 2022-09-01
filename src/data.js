@@ -33,10 +33,9 @@ export function orderMovies(option, data){
     return ordenAZ.reverse();
   }
 }
-/* computeStats(data): la función compute o calcular, nos permitirá hacer cálculos estadísticos básicos para
- ser mostrados de acuerdo a la data proporcionada.*/
+/* *******Esta función calcula el porcentaje de películas dirigidas por un director******* */
  export function percentDirector(data, director){
   const filmsDirector = filterDirector(director, data)
   const percent = Math.round((filmsDirector.length / data.length) * 100)
-  return percent;
+  return percent + '%';
  }
