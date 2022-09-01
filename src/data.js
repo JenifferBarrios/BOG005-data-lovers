@@ -1,17 +1,39 @@
 // *******Esta función filtra la data por director*******
-export function filtrarDirector(directorName, data){ // sting Nombre del director y un arreglo toda la data
-  const filtrarData = data.filter(function(datoDirector){
-    return datoDirector.director === directorName;
-  });
-  return filtrarData;
+export function filtrarDirector (directorName,data) {
+    const filtrarData = data.filter(function(datoAFiltrar){
+    return datoAFiltrar.director === directorName;
+  })
+return filtrarData;
+// console.log(filtrarData)
 }
-/* sortData(data, sortBy, sortOrder): esta función sort u ordenar recibe tres parámetros. El primer parámetro,
- data, nos entrega los datos.
-El segundo parámetro, sortBy, nos dice con respecto a cuál de los campos de la data se quiere ordenar. 
-El tercer parámetro, sortOrder, indica si se quiere ordenar de manera ascendente o descendente. */
-export function sortData(){
-  //const ordenarData = data.films.sort();
-  return ordenarData;
+export function filtrarProductor (productorName,data) {
+  const filtrarData2 = data.filter (function(datoAFiltrar2){
+    return datoAFiltrar2.producer === productorName ;
+  })
+return filtrarData2
 }
-/* computeStats(data): la función compute o calcular, nos permitirá hacer cálculos estadísticos básicos para
- ser mostrados de acuerdo a la data proporcionada.*/
+//****Esta Funcion Organiza la Data por Fecha de Lanzamiento *******
+
+export function ordenPeliculas (opcion,data){
+  const copiaData = [...data]
+  const ordenAZ  = copiaData.sort (function(a,b){
+      if (a.title > b.title){
+        return 1;
+      }
+      if (a.title < b.title){
+        return -1;
+      }
+      return 0;
+      })
+    if(opcion=="AZ"){
+      return ordenAZ
+    }else{
+      return ordenAZ.reverse()
+    }
+    }
+export function calculo(data,director){
+  const peliculasDirector =filtrarDirector(director,data)
+  const porcentaje = Math.round((peliculasDirector.length/data.length)*100)
+  return porcentaje + '%'
+}
+

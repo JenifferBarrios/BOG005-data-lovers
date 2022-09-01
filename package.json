@@ -19,7 +19,6 @@
     "eslint": "^8.3.0",
     "gh-pages": "^3.1.0",
     "htmlhint": "^1.0.0",
-    "jest": "^27.0.1",
     "opener": "^1.5.1",
     "serve": "^13.0.2"
   },
@@ -41,5 +40,8 @@
   "bugs": {
     "url": "https://github.com/AleSalazaD/BOG005-data-lovers/issues"
   },
-  "homepage": "https://github.com/AleSalazaD/BOG005-data-lovers#readme"
+  "homepage": "https://github.com/AleSalazaD/BOG005-data-lovers#readme",
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
 }

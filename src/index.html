@@ -35,6 +35,22 @@
               <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
             </select>
           </p>
+            <p>
+              <select name="producer" id="producer" class="producer">
+                <option value="">Escoje un Productor</option>
+                <option value="Isao Takahata">Isao Takahata</option>
+                <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+                <option value="Toru Hara">Toru Hara</option>
+                <option value="Toshio Suzuki">Toshio Suzuki</option>
+                <option value="Yoshiaki Nishimura">Yoshiaki Nishimura</option>
+              </select>
+            </p>
+            <p>
+              <select name="ordenAZ" id="ordenAZ" class="ordenAZ">
+                <option value="AZ">"A-Z"</option>
+                <option value="ZA">"Z-A"</option>
+                </select>
+            </p>
           <p>
             <!-- <button type="button" id="annio" class="annio">año de estreno</button> -->
           </p>
@@ -44,13 +60,20 @@
         <section class="present">
           <p>Visita las películas más bellas y premiadas de Ghibli. Haz click en los botones para conocer más y antojarte de verlas!</p>
         </section>
-        <section class="container">
+        <section class="porcentaje" id="porcentaje">
+          <p>Porcentaje de Peliculas realizadas por este Director</p>
+        </section>
+        <section class="container" id="container">
+          
           <!-- Aquí se pintan las tarjetas con el js -->
         </section>
+
         <section class="info-movies info-movies-visible">
           <!-- Aquí se pinta la info detallada de las películas con el js -->
           <h2 id="movies">GHIBLI MOVIES</h2>
         </section>
+        <section class="calculo" id="calculo">
+         </section>
       </main>
     <script defer src="main.js" type="module"></script>
   </body>
