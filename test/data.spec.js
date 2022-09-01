@@ -1,6 +1,8 @@
+
 import { filterDirector, filterProducer} from '../src/data.js';
 
 const dataSample =[
+
   {
     "id": "2baf70d1-42bb-4437-b551-e5fed5a87abe",
     "title": "Castle in the Sky",
@@ -42,9 +44,11 @@ const dataSample =[
     "rt_score": "97",    
   },
 ]
+
 describe ("filterDirector", ()=>{
   it('Deberia mostrar el nombre de una pelicula de un director',()=>{
     const filteredData = [{
+
       "id": "2baf70d1-42bb-4437-b551-e5fed5a87abe",
       "title": "Castle in the Sky",
       "description": "The orphan Sheeta inherited a mysterious crystal that links her to the mythical sky-kingdom of Laputa. With the help of resourceful Pazu and a rollicking band of sky pirates, she makes her way to the ruins of the once-great civilization. Sheeta and Pazu must outwit the evil Muska, who plans to use Laputa's science to make himself ruler of the world.",
@@ -74,6 +78,7 @@ describe ("filterDirector", ()=>{
       "release_date": "1989",
       "rt_score": "96",    
     },]
+
     expect(filterDirector("Hayao Miyazaki",dataSample)).toEqual(filteredData);
   })
   })
@@ -93,3 +98,4 @@ describe ("filterDirector", ()=>{
       expect(filterProducer("Isao Takahata",dataSample)).toEqual(filteredData);
     })
     })
+
