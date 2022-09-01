@@ -30,8 +30,10 @@ crearTarjetas(data.films);//llama a la function crearTarjetas
 const select = document.getElementById("director")
 select.addEventListener("change", (e) => {
     let selectValue = e.target.value;
+    
+    const percent = calculo(data.films, selectValue)
     let arrFilterdirector = filtrarDirector(selectValue, data.films)
-    console.log(calculo(data.films, selectValue))
+    document.getElementById("porcentaje").innerHTML = `El Porcentaje de Peliculas dirigida por ${selectValue} es ${percent} `
     mostrarPorcentaje(selectValue)
     crearTarjetas(arrFilterdirector)
 })
@@ -55,7 +57,7 @@ selectAZ.addEventListener("change", (evento) => {
 })
 
 function mostrarPorcentaje  (director) {
-      document.getElementById("porcentaje").innerHTML = calculo(data.films,director)
+      
 }
 
 
