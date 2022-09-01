@@ -107,7 +107,8 @@ body {
     border-radius: 8px; 
     border-left: 4px solid rgb(228, 127, 25);
     border-top: 4px solid rgb(228, 127, 25); 
-    width: 300px; 
+    width: 800px; 
+    
 }
 .card:hover {
     background-color: #5ec7d2f0;
@@ -120,6 +121,11 @@ body {
     border: solid 0.3em;
     border-color: rgb(228, 127, 25);
     border-radius: 15px;   
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    
+    
 }
 .titulo {
     padding: 10px;
@@ -130,6 +136,8 @@ body {
 }
 .card p {
     padding: 10px;
+   
+    
 }.card a {
     background-color: rgb(44, 42, 42);
     color: rgb(189, 227, 248);
@@ -139,6 +147,14 @@ body {
     text-decoration: none;
     margin: 8px 10px;
     border-radius: 10px;
+}
+.card description {
+    height:800px ;
+    padding: 20px;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: justify;
+    box-shadow: 1px;
 }
 .info-movies {
     display: none;
@@ -239,4 +255,12 @@ body {
     .card p {
         padding: 5px;
     }
+  }
+  .porcentaje {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+    font-style: oblique;
+    font-variant: normal;
+    padding:10px;
+    text-align: center;
   }
