@@ -51,7 +51,6 @@ selectAZ.addEventListener("change", (evento)=>{
 function showPercent(director){
 document.getElementById('percent').innerHTML = percentDirector(data.films, director);
 }
-=======
 const select = document.getElementById("director")
 select.addEventListener("change", (e) => {
     let selectValue = e.target.value;
