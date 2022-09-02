@@ -115,8 +115,8 @@ describe("filterProducer", () => {
   })
 });
 
-describe("orderMovies"), ()=>{
-  it("Deberia mostrar el nombre de las peliculas en orden alfabetico A-Z"), ()=>{
+describe("orderMovies", ()=>{
+  it("Deberia mostrar el nombre de las peliculas en orden alfabetico A-Z", ()=>{
     const AzMovieOrder = [
       {
         id: "2baf70d1-42bb-4437-b551-e5fed5a87abe",
@@ -131,16 +131,16 @@ describe("orderMovies"), ()=>{
         rt_score: "95",
       },
       {
-        id: "58611129-2dbc-4a81-a72f-77ddfc1b1b49",
-        title: "My Neighbor Totoro",
+        id: "12cfb892-aac0-4c5b-94af-521852e46d6a",
+        title: "Grave of the Fireflies",
         description:
-          "Two sisters move to the country with their father in order to be closer to their hospitalized mother, and discover the surrounding trees are inhabited by Totoros, magical spirits of the forest. When the youngest runs away from home, the older sister seeks help from the spirits to find her.",
-        director: "Hayao Miyazaki",
-        producer: "Hayao Miyazaki",
+          "In the latter part of World War II, a boy and his sister, orphaned when their mother is killed in the firebombing of Tokyo, are left to survive on their own in what remains of civilian life in Japan. The plot follows this boy and his sister as they do their best to survive in the Japanese countryside, battling hunger, prejudice, and pride in their own quiet, personal battle.",
+        director: "Isao Takahata",
+        producer: "Toru Hara",
         poster:
-          "https://static.wikia.nocookie.net/studio-ghibli/images/d/db/My_Neighbor_Totoro.jpg",
+          "https://static.wikia.nocookie.net/studio-ghibli/images/a/a5/Grave_of_the_Fireflies_Japanese_poster.jpg",
         release_date: "1988",
-        rt_score: "93",
+        rt_score: "97",
       },
       {
         id: "ea660b10-85c4-4ae3-8a5f-41cea3648e3e",
@@ -155,17 +155,18 @@ describe("orderMovies"), ()=>{
         rt_score: "96",
       },
       {
-        id: "12cfb892-aac0-4c5b-94af-521852e46d6a",
-        title: "Grave of the Fireflies",
+        id: "58611129-2dbc-4a81-a72f-77ddfc1b1b49",
+        title: "My Neighbor Totoro",
         description:
-          "In the latter part of World War II, a boy and his sister, orphaned when their mother is killed in the firebombing of Tokyo, are left to survive on their own in what remains of civilian life in Japan. The plot follows this boy and his sister as they do their best to survive in the Japanese countryside, battling hunger, prejudice, and pride in their own quiet, personal battle.",
-        director: "Isao Takahata",
-        producer: "Toru Hara",
+          "Two sisters move to the country with their father in order to be closer to their hospitalized mother, and discover the surrounding trees are inhabited by Totoros, magical spirits of the forest. When the youngest runs away from home, the older sister seeks help from the spirits to find her.",
+        director: "Hayao Miyazaki",
+        producer: "Hayao Miyazaki",
         poster:
-          "https://static.wikia.nocookie.net/studio-ghibli/images/a/a5/Grave_of_the_Fireflies_Japanese_poster.jpg",
+          "https://static.wikia.nocookie.net/studio-ghibli/images/d/db/My_Neighbor_Totoro.jpg",
         release_date: "1988",
-        rt_score: "97",
+        rt_score: "93",
       },
     ]
-  }
-}
+    expect(orderMovies('AZ',dataSample)).toEqual(AzMovieOrder);
+  })
+});
