@@ -15,7 +15,7 @@ function crearTarjetas(peliculas) {
     container.innerHTML = ""
     peliculas.forEach(films => {
         container.innerHTML += `
-    <article class="card">
+    <article class="card" id= "card">
             <h2 class="titulo">${films.title}</h2>
             <img class="posters" src="${films.poster}"
             <p class="descripcion">${films.description}</p>
