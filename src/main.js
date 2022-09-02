@@ -1,6 +1,5 @@
 import data from './data/ghibli/ghibli.js';
-
-import { filterDirector, filterProducer, orderMovies, percentDirector} from './data.js';
+import { filtrarDirector, filtrarProductor, ordenPeliculas, calculo } from './data.js';
 
 
 // *******Despliega menú hamburguesa*******
@@ -11,51 +10,34 @@ navToggle.addEventListener("click", () => {
 });
 
 // *******Pinta las tarjetas en el DOM*******
-
-function createCards(movies){
+function crearTarjetas(peliculas) {
     const container = document.querySelector('.container')
-    container.innerHTML= ""
-    movies.forEach(films => {   
-    container.innerHTML += `
-    <article class="card">
+    container.innerHTML = ""
+    peliculas.forEach(films => {
+        container.innerHTML += `
+    <article class="card" id= "card">
             <h2 class="titulo">${films.title}</h2>
             <img class="posters" src="${films.poster}"
-          </article>
-
+            <p class="descripcion">${films.description}</p>
+            <article class ="fecha">Fecha de Lanzamiento
+            ${films.release_date}
+            </article> 
+            
+            </article>
+    
     `});
 
 }
-createCards(data.films);//llama a la function crearTarjetas
+crearTarjetas(data.films);//llama a la function crearTarjetas
 
 // *******Filtrar directores*******
-
-
-// *******Filtrar productores*******
-const select2 = document.getElementById('producer');//Identifica al elemento 'productor'
-select2.addEventListener('change', (e)=>{
-    let selectValue = e.target.value 
-    let arrFilterProducer = filterProducer(selectValue, data.films)
-    console.log(arrFilterProducer)
-    createCards(arrFilterProducer)
-});
-
-// *******Ordenar alfabéticamente por título de película*******
-const selectAZ = document.getElementById("orderAZ");
-selectAZ.addEventListener("change", (evento)=>{
-    let eventAZ = evento.target.value;
-    let arrOrder = orderMovies(eventAZ, data.films);
-    createCards(arrOrder);
-})
-
-// ***Imprime el porcentaje en pantalla***
-function showPercent(director){
-document.getElementById('percent').innerHTML = percentDirector(data.films, director);
-}
 const select = document.getElementById("director")
 select.addEventListener("change", (e) => {
     let selectValue = e.target.value;
+    
+    const percent = calculo(data.films, selectValue)
     let arrFilterdirector = filtrarDirector(selectValue, data.films)
-    console.log(calculo(data.films, selectValue))
+    document.getElementById("porcentaje").innerHTML = `El Porcentaje de Peliculas dirigida por ${selectValue} es ${percent} `
     mostrarPorcentaje(selectValue)
     crearTarjetas(arrFilterdirector)
 })
@@ -72,15 +54,12 @@ select2.addEventListener("change", (evento) => {
 // *******Ordenar peliculas *******
 
 const selectAZ = document.getElementById("ordenAZ")
-selectAZ.addEventListener("change", (evento) => {
+selectAZ.addEventListener("change", (evento) => {      
     let eventoAZ = evento.target.value;
     let arrOrdenar = ordenPeliculas(eventoAZ, data.films)
     crearTarjetas(arrOrdenar)
 })
 
 function mostrarPorcentaje  (director) {
-      document.getElementById("porcentaje").innerHTML = calculo(data.films,director)
+      
 }
-
-
-

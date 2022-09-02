@@ -1,615 +1,267 @@
 /* DISPOSITIVO GRANDE */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;  
 }
-
-:root {
-    --backgroundcolor: #79cbce72;
-    --colortextos: rgb(35, 34, 34);
-    --fontfamily:'Montserrat', sans-serif;
-    --colorbordesorange: rgb(228, 127, 25);
-    --colortexthover: rgb(218, 251, 252);
-    --colorhead: #55C5D1;
-    --colormenu: #dba887f3;
-    --presentcolor: #d3b1a4f1; 
+body {
+    background-color: #79cbce72;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
+.header {
+    background-color: #5ec7d2f0;
+    height: 150px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom-left-radius: 30px;
+    border-left: 4px solid rgb(228, 127, 25);
+    border-top: 4px solid rgb(228, 127, 25);  
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto; 
+}
+.nav-menu-link {
+    color: rgb(78, 73, 73);
+    text-decoration: none;
+    border-radius: 6px;
+    align-items: center;
+}
+.header-nav-logo {
+    margin-left: auto;
+    height: 150px;
+    width: 150px;
+}
+.nav-titulo-pagina {
+    font-size: 60px;
+    line-height: 20px;
+    color: rgb(66, 60, 60);
+    width: max-content;
+    margin-top: 40px;
+    margin-right: 2px; 
+}
+.nav-menu {
+    display: flex;
+    padding-top: 70px;
+    padding-left: 0;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+    list-style: none;
+}
+.nav-menu-item {
+    font-size: 25px;
+    margin: 0 10px;
+    line-height: 20px;
+    width: max-content;
+}
+.nav-menu-link:hover {
+    background-color: #d3b1a4d4;
+    transition: 1s;
+}
+.nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 13px;
+}
+.nav-toggle {
+    color: rgb(66, 60, 60);
+    background: none;
+    border: none;
+    padding-right: 15;
+    margin-bottom: 55px;
+    display: none;
+    cursor: pointer;
+}
+.main {
+    width: min-content;
+}
+.present {
+    margin-top: 150px;
+    padding: 20px 80px;
+    background-color: #d3b1a472;
+    border-radius: 10px;
+    text-align: justify;
+    width: 120%;
+    font-size: 25px;
+    font-style: italic;
+    border-bottom: 10px dashed rgb(228, 127, 25);
+    color: rgb(103, 97, 97);
+    background-image:url(ghibli.png) ;
+}
+/* TARJETA DISPOSITIVO GRANDE */
+.container {
+    /* GRID */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 50%;
+    max-width: 1200px;
+    margin-left: 80px;
+    padding-top: 40px;
+    gap: 50px;
+}
+.card {
+    background-color: #d3b1a4;
+    transition: 1s;
+    border-radius: 8px; 
+    border-left: 4px solid rgb(228, 127, 25);
+    border-top: 4px solid rgb(228, 127, 25); 
+    width: 800px; 
+    
+}
+.card:hover {
+    background-color: #5ec7d2f0;
+}
+.posters {
+    display: flex;
+    height: 300px;
+    width: auto;
+    margin-left: 35px;
+    border: solid 0.3em;
+    border-color: rgb(228, 127, 25);
+    border-radius: 15px;   
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    
+    
+}
+.titulo {
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 18px;
+    color: rgb(69, 67, 67);
+    text-align: center;
+}
+.card p {
+    padding: 10px;
+   
+    
+}.card a {
+    background-color: rgb(44, 42, 42);
+    color: rgb(189, 227, 248);
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin: 8px 10px;
+    border-radius: 10px;
+}
+.card description {
+    height:800px ;
+    padding: 20px;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: justify;
+    box-shadow: 1px;
+}
+.info-movies {
+    display: none;
+}
+/* .info-movies-visible {
+    display: block;
+} */
 /* =============================================================== 
-          DISPOSITIVOS DE TAMAÑO MENOR A 768px => CELULARES
+          DISPOSITIVOS DE TAMAÑO MENOR A 768px 
 =============================================================== */
-@media screen and (min-width: 1px) and (max-width: 767px) {
-    body {
-        font-family: var(--fontfamily);
-        background-color: var(--backgroundcolor);
-        width: 100%;
-        height: auto;
-        }
-
-        /* ***CABECERA DE LA PAGINA*** */
-    header {
-        width: 100%;
-        height: 110px;
-        margin: 0 0px;
-        background-color: var(--colorhead);
-        color: rgb(67, 65, 65);
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 100;
-        border-bottom-left-radius: 15px;
-        border-left: 4px solid var(--colorbordesorange);
-        border-top: 4px solid var(--colorbordesorange);
-        border-bottom: 4px solid var(--colorbordesorange);
+@media (max-width: 768px ) {
+    .main {
+        width: auto;
     }
-
-    /* ***MENU*** */
-    .nav-title-page {
-        float: left;
-        margin-top: 40px;
-        margin-left: 20px;
-        font-size: 20px;
+    .header {
+        height: 120px;
+        border-bottom-left-radius: 20px;
+        overflow: hidden;
     }
-
     .header-nav-logo {
-        margin-left: 20px;
         height: 100px;
         width: 100px; 
+        margin-left: -25px;
     }
-
-    .nav-toggle {
-        z-index: auto;
-        float: right;
-        font-size: 20px;
-        margin: 5px;
-        color: var(--colortextos);
-        background: none;
-        border: none;
-        cursor: pointer;
+    .nav-titulo-pagina {
+        font-size: 30px;
+        text-align: center;
+        padding: 5px;
+        margin-top: 7px;
     }
-
     .nav-menu {
-        width: 100%;
-        height: 210px;
-        list-style: none;
-        background-color: var(--presentcolor);
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        background-color: rgb(241, 179, 122);
         position: fixed;
-        left: 100%;
-        border-bottom-left-radius: 15px;
-        border-top-left-radius: 15px;
+        left: 0;
+        top: 90px;
+        width: 100%;
+        padding: 20px 0;
+        border-radius: 20px;
+        height: calc(40% - 20px);
         overflow-y: auto;
-        transition: left 0.5s;
-        border-left: 4px solid var(--colorbordesorange);
-        border-top: 4px solid var(--colorbordesorange);
-        border-bottom: 5px dashed var(--colorbordesorange);
+        left: 100%;
+        transition: left 1s;
     }
-
+    .nav-menu-item {
+        line-height: 10px;
+    }
+    .nav-menu-link:hover {
+        background: none;
+        color: #5ec7d2f0;;
+    }
+    .nav-toggle {
+        display: block;
+        font-size: 25px;
+        margin-top: 2px;
+    }
     .nav-menu_visible {
         left: 0;
     }
-
-    .nav-menu-item {
-        color: var(--colortextos);
-        font-size: 20px;
-        font-style: italic;
+    .present> p {
+        font-size: 15px;
         width: 100%;
-        text-align: left;
-        margin-top: 20px;
-        margin-left: 20px;
-    }
-
-    .nav-menu-item:hover {
-        background-color: #95d0d8;
-    }
-
-    #icons {
-        margin-right: 10px;
-        color: #41959e;
-    }
-
-    .nav-menu-link {
-        color: var(--colortextos);
-        text-decoration: none;
-    }
-
-    .nav-menu-link:hover {
-        color: var(--colortexthover);
-        transition: 0.5s;
-    }
-
-     /* ***CUERPO DE LA PAGINA, SECCION ORDENAR. TARJETAS DISPOSITIVO PEQUE*** */
-     .selectors {
-        display: block;
-        background-color: var(--colorhead);
-        height: 200px;
-        width: 100%;
-        margin-top: 112px;
-        padding: 10px 40px;
-        border-top: 5px dashed var(--colorbordesorange);
-        border-bottom: 5px dashed var(--colorbordesorange);
-        color: var(--colortextos);
-        border-radius: 10px;
-    }
-    
-    #label-main {
-        display: flex;
-        font-size: 15px;
-        align-items: center;
-    }
-
-    .select-content {
-        display: grid;
-        grid-template-rows: auto;
-        }
-    
-    .filter {
-        font-family: var(--fontfamily);
-        font-size: 15px;
-        border-radius: 15px;
-        border-color: var(--colorbordesorange);
-        background-color: #95d0d8;
-        color: var(--colortextos);
-    }
-
-    .filter-label {
-        font-size: 15px;
-        text-align: center;
-        margin-bottom: 5px;
-    }
-
-    #artic-direct {
-        display: block;
         margin: 5px;
+        padding: 10px;
     }
-
-    #artic-az {
-        display: block;
-        margin: 10px;
+    .present {
+        margin-top: 100px;
+        margin-left: auto;
+        padding: 10px;
+        width: 100%;
+        text-align: justify;
     }
-
-    #artic-produc {
-        display: block;
-        margin: 10px;
-    }
-
-    #label-alfa {
-        font-size: 40px;
-        margin-left: 700px;        
-    }
-
-    /* ***CUERPO DE LA PAGINA TARJETAS DISPOSITIVO PEQUE*** */
+/* TARJETAS DISPOSITIVO PEQUE*/
     .container {
+        /* FLEXBOX */
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        width: 100%;
-        margin-top: 0px;
+        text-align: justify;
     }
-
     .card {
-        height: auto;
-        margin: 50px;
-        background-color: var(--presentcolor);
-        border-left: 4px solid var(--colorbordesorange);
-        border-top: 4px solid var(--colorbordesorange); 
-        border-radius: 15px; 
-        text-align: center;
+        margin: auto;
+        padding: 15px;
         align-items: center;
-        word-wrap: break-word;
+        width: 300px;
+        height: auto;
+        border-radius: 14px; 
     }
-
     .posters {
-        height: 250px;
-        margin: 10px;
-        text-align: center;
-        border-radius: 15px;
+        margin-left: 0;
+        padding: 5px;
     }
-
     .card h2 {
         padding: 5px;
-        color: var(--colortextos);
-        font-size: 15px;
-    }
-    
-    .card a {
-        background-color: rgb(44, 42, 42);
-        color: rgb(189, 227, 248);
-        padding: 15px 20px;
-        width: fit-content;
-        text-decoration: none;
-        border-radius: 10px;
-    }
-}
-
-/* =============================================================== 
-          DISPOSITIVOS DE TAMAÑO TABLET 768px 
-=============================================================== */
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-    body {
-        font-family: var(--fontfamily);
-        background-color: var(--backgroundcolor);
-        width: 100%;
-        height: auto;
-        }
-
-    /* ***CABECERA DE LA PAGINA*** */
-    header {
-        width: 100%;
-        height: 150px;
-        background-color: var(--colorhead);
-        color: var(--colortextos);
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 100;
-        border-bottom-left-radius: 20px;
-        border-left: 10px solid var(--colorbordesorange);
-        border-top: 10px solid var(--colorbordesorange);
-    }
-
-    /* ***MENU*** */
-    .nav {
-        display: inline-flex;
-    }
-
-    .nav-title-page {
-        float: left;
-        margin-top: 75px;
         margin-left: 5px;
-        font-size: 30px;
     }
-
-    .header-nav-logo {
-        margin-top: 10px;
-        margin-left: -15px;
-        height: 100px;
-        width: 100px; 
-    }
-
-    .nav-toggle {
-        display: none;
-    }
-
-    .nav-menu {
-        display: inline-flex;
-        align-content: center;
-        align-items: center;
-        list-style: none;
-        width: 80%;
-        padding: 0px 0;
-    }
-
-    .nav-menu_visible {
-        left: 0;
-    }
-
-    .nav-menu-item {
-        color: var(--colortextos);
-        font-size: 15px;
-        font-style: italic;
-        width: 100%;
-        text-align: left;
-        margin-top: 20px;
-        margin-left: 20px;
-    }
-
-    .nav-menu-item:hover {
-        background-color: #95d0d8;
-    }
-
-    #icons {
-        margin-right: 10px;
-        color: #41959e;
-    }
-
-    .nav-menu-link {
-        color: var(--colortextos);
-        text-decoration: none;
-    }
-
-    .nav-menu-link:hover {
-        color: var(--colortexthover);
-        transition: 0.5s;
-    }
-
-     /* ***CUERPO DE LA PAGINA, SECCION ORDENAR.*** */
-     .selectors {
-        display: block;
-        background-color: var(--colorhead);
-        height: 200px;
-        width: 100%;
-        margin-top: 160px;
-        padding: 10px 40px;
-        border-top: 5px dashed var(--colorbordesorange);
-        border-bottom: 5px dashed var(--colorbordesorange);
-        color: var(--colortextos);
-        border-radius: 10px;
-    }
-    
-    #label-main {
-        display: flex;
-        font-size: 15px;
-        align-items: center;
-    }
-
-    .select-content {
-        display: grid;
-        grid-template-rows: auto;
-        }
-    
-    .filter {
-        font-family: var(--fontfamily);
-        font-size: 15px;
-        border-radius: 15px;
-        border-color: var(--colorbordesorange);
-        background-color: #95d0d8;
-        color: var(--colortextos);
-    }
-
-    .filter-label {
-        font-size: 15px;
-        text-align: center;
-        margin-bottom: 5px;
-    }
-
-    #artic-direct {
-        display: block;
-        margin: 5px;
-    }
-
-    #artic-az {
-        display: block;
-        margin: 10px;
-    }
-
-    #artic-produc {
-        display: block;
-        margin: 10px;
-    }
-
-    #label-alfa {
-        font-size: 40px;
-        margin-left: 700px;        
-    }
-
-    /* ***CUERPO DE LA PAGINA TARJETAS DISPOSITIVO MEDIANO*** */
-    .container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 100%;
-        margin-top: 0px;
-    }
-
-    .card {
-        width: 250px; 
-        height: auto;
-        margin: 50px;
-        background-color: var(--presentcolor);
-        border-left: 4px solid var(--colorbordesorange);
-        border-top: 4px solid var(--colorbordesorange); 
-        border-radius: 15px; 
-        text-align: center;
-        align-items: center;
-        word-wrap: break-word;
-    }
-
-    .posters {
-        height: 250px;
-        margin: 10px;
-        text-align: center;
-        border-radius: 15px;
-    }
-
-    .card h2 {
+    .card p {
         padding: 5px;
-        color: var(--colortextos);
-        font-size: 15px;
     }
-    
-    .card a {
-        background-color: rgb(44, 42, 42);
-        color: rgb(189, 227, 248);
-        padding: 15px 20px;
-        width: fit-content;
-        text-decoration: none;
-        border-radius: 10px;
-    }
-}
-
-/*=============================================================== 
-          DISPOSITIVOS DE TAMAÑO GRANDE =>LAPTOPS Y PC
-=============================================================== */
-@media screen and (min-width: 1201px) and (max-width: 2560px) {
-    body {
-        display: block;
-        font-family: var(--fontfamily);
-        background-color: var(--backgroundcolor);
-        height: auto;
-    }
-    /* ***CABECERA DE LA PAGINA*** */
-    header {
-        width: 100%;
-        height: 150px;
-        background-color: var(--colorhead);
-        color: var(--colortextos);
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 100;
-        border-bottom-left-radius: 20px;
-        border-left: 10px solid var(--colorbordesorange);
-        border-top: 10px solid var(--colorbordesorange);
-    }
-
-    /* ***MENU*** */
-    .nav {
-        display: inline-flex;
-    }
-
-    .nav-title-page {
-        float: left;
-        margin-top: 75px;
-        margin-left: 5px;
-        font-size: 30px;
-    }
-
-    .header-nav-logo {
-        margin-top: 10px;
-        margin-left: -15px;
-        height: 100px;
-        width: 100px; 
-    }
-
-    .nav-toggle {
-        display: none;
-    }
-
-    .nav-menu {
-        display: inline-flex;
-        align-content: center;
-        align-items: center;
-        list-style: none;
-        width: 80%;
-        padding: 0px 0;
-    }
-
-    .nav-menu_visible {
-        left: 0;
-    }
-
-    .nav-menu-item {
-        color: var(--colortextos);
-        font-size: 15px;
-        font-style: italic;
-        width: 100%;
-        text-align: left;
-        margin-top: 20px;
-        margin-left: 20px;
-    }
-
-    .nav-menu-item:hover {
-        background-color: #95d0d8;
-    }
-
-    #icons {
-        margin-right: 10px;
-        color: #41959e;
-    }
-
-    .nav-menu-link {
-        color: var(--colortextos);
-        text-decoration: none;
-    }
-
-    .nav-menu-link:hover {
-        color: var(--colortexthover);
-        transition: 0.5s;
-    }
-
-    /* ***CUERPO DE LA PAGINA, SECCION ORDENAR.*** */
-    .selectors {
-        display: block;
-        background-color: var(--colorhead);
-        height: 200px;
-        width: 100%;
-        margin-top: 160px;
-        padding: 10px 40px;
-        border-top: 5px dashed var(--colorbordesorange);
-        border-bottom: 5px dashed var(--colorbordesorange);
-        color: var(--colortextos);
-        border-radius: 10px;
-    }
-
-    #label-main {
-        display: flex;
-        font-size: 15px;
-        align-items: center;
-    }
-
-    .select-content {
-        display: grid;
-        grid-template-rows: auto;
-        }
-
-    .filter {
-        font-family: var(--fontfamily);
-        font-size: 15px;
-        border-radius: 15px;
-        border-color: var(--colorbordesorange);
-        background-color: #95d0d8;
-        color: var(--colortextos);
-    }
-
-    .filter-label {
-        font-size: 15px;
-        text-align: center;
-        margin-bottom: 5px;
-    }
-
-    #artic-direct {
-        display: block;
-        margin: 5px;
-    }
-
-    #artic-az {
-        display: block;
-        margin: 10px;
-    }
-
-    #artic-produc {
-        display: block;
-        margin: 10px;
-    }
-
-    #label-alfa {
-        font-size: 40px;
-        margin-left: 700px;        
-    }
-
-    /* ***CUERPO DE LA PAGINA TARJETAS DISPOSITIVO GRANDE*** */
-    .container {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        justify-content: center;
-        width: 100%;
-        margin-top: 0px;
-    }
-
-    .card {
-        width: 250px; 
-        height: auto;
-        margin: 50px;
-        background-color: var(--presentcolor);
-        border-left: 4px solid var(--colorbordesorange);
-        border-top: 4px solid var(--colorbordesorange); 
-        border-radius: 15px; 
-        text-align: center;
-        align-items: center;
-        word-wrap: break-word;
-    }
-
-    .posters {
-        height: 250px;
-        margin: 10px;
-        text-align: center;
-        border-radius: 15px;
-    }
-
-    .card h2 {
-        padding: 5px;
-        color: var(--colortextos);
-        font-size: 15px;
-    }
-
-    .card a {
-        background-color: rgb(44, 42, 42);
-        color: rgb(189, 227, 248);
-        padding: 15px 20px;
-        width: fit-content;
-        text-decoration: none;
-        border-radius: 10px;
-    }
-}
+  }
+  .porcentaje {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+    font-style: oblique;
+    font-variant: normal;
+    padding:10px;
+    text-align: center;
+  }
