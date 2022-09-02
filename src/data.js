@@ -1,5 +1,6 @@
 
 // *******Esta función filtra la data por director*******
+
 export function filterDirector(directorName, data){ //string Nombre del director y un arreglo toda la data
   const filterData = data.filter(function(filterDirector){
     return filterDirector.director === directorName;
