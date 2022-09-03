@@ -432,7 +432,7 @@
     /* ***CABECERA DE LA PAGINA*** */
     header {
         width: 100%;
-        height: 150px;
+        height: 155px;
         background-color: var(--colorhead);
         color: var(--colortextos);
         position: fixed;
@@ -440,8 +440,11 @@
         left: 0;
         z-index: 100;
         border-bottom-left-radius: 20px;
-        border-left: 10px solid var(--colorbordesorange);
+        border-left: 5px solid var(--colorbordesorange);
         border-top: 10px solid var(--colorbordesorange);
+        background-image: url(imagenes/chihirobanner.gif);
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     /* ***MENU*** */
@@ -452,15 +455,20 @@
     .nav-title-page {
         float: left;
         margin-top: 75px;
-        margin-left: 5px;
-        font-size: 30px;
+        margin-left: 15px;
+        font-size: 40px;
     }
 
     .header-nav-logo {
-        margin-top: 10px;
-        margin-left: -15px;
-        height: 100px;
-        width: 100px; 
+        margin-top: 2px;
+        margin-left: 25px;
+        height: 140px;
+        width: 140px; 
+    }
+
+    .header-nav-logo:hover {
+        background-color: var(--presentcolor);
+        transition: 1s;
     }
 
     .nav-toggle {
@@ -472,7 +480,7 @@
         align-content: center;
         align-items: center;
         list-style: none;
-        width: 80%;
+        /* width: 80%; */
         padding: 0px 0;
     }
 
@@ -482,21 +490,24 @@
 
     .nav-menu-item {
         color: var(--colortextos);
-        font-size: 15px;
+        font-size: 25px;
         font-style: italic;
         width: 100%;
-        text-align: left;
+        text-align: right;
         margin-top: 20px;
-        margin-left: 20px;
+        margin-left: 100px;
+        padding: 20px;
     }
 
     .nav-menu-item:hover {
-        background-color: #95d0d8;
+        color: #95d0d8;
+        transition: 0.5s;
     }
 
-    #icons {
-        margin-right: 10px;
-        color: #41959e;
+    .icons {
+        padding: 10px;
+        color: black;
+        /* margin-right: 3x; */
     }
 
     .nav-menu-link {
@@ -564,52 +575,75 @@
         margin: 10px;
     }
 
-    #label-alfa {
-        font-size: 40px;
-        margin-left: 700px;        
+    /* *******PRESENTACION DE LA PAGINA******* */
+    .presentation {
+        color: var(--colortextos);
+        margin: 20px;
+        
     }
 
     /* ***CUERPO DE LA PAGINA TARJETAS DISPOSITIVO GRANDE*** */
     .container {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         justify-content: center;
         width: 100%;
-        margin-top: 0px;
+        margin: 50px;
     }
 
     .card {
-        width: 250px; 
-        height: auto;
-        margin: 50px;
+        width: 550px; 
+        margin: 20px;
+        padding: 20px;
         background-color: var(--presentcolor);
         border-left: 4px solid var(--colorbordesorange);
         border-top: 4px solid var(--colorbordesorange); 
         border-radius: 15px; 
-        text-align: center;
+        text-align: justify; 
         align-items: center;
         word-wrap: break-word;
     }
 
+    .card:hover {
+        background-color: #5ec7d2f0;
+        transition: 0.5s;
+    }
+        
     .posters {
-        height: 250px;
-        margin: 10px;
-        text-align: center;
-        border-radius: 15px;
+        display: flex;
+        height: 300px;
+        width: auto;
+        margin-left: 35px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        border-color: var(--colorbordesorange);
+        border-radius: 15px;   
+        float: left;
     }
 
-    .card h2 {
-        padding: 5px;
+    .title {
         color: var(--colortextos);
-        font-size: 15px;
+        padding: 10px;
+        margin-left: 10px;
+        text-align: center;
+        color: black;
+        font-size: 20px;
+        font-style: oblique;
     }
 
-    .card a {
-        background-color: rgb(44, 42, 42);
-        color: rgb(189, 227, 248);
-        padding: 15px 20px;
-        width: fit-content;
-        text-decoration: none;
-        border-radius: 10px;
+    .releaseDate {
+        color: black;
+        font-size: 20px;
+        font-style: oblique;
+        margin-top: 10px;
+    }
+
+    .card description {
+        height:800px ;
+        padding: 20px;
+        font-size: 15px;
+        line-height: 1.5;
+        text-align: justify;
+        box-shadow: 1px;
     }
 }

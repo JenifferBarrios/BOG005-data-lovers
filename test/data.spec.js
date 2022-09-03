@@ -1,4 +1,3 @@
-import { describe } from "eslint/lib/rule-tester/rule-tester.js";
 import { filterDirector, filterProducer, orderMovies } from "../src/data.js";
 
 const dataSample = [
