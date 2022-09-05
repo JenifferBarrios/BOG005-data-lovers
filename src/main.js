@@ -29,14 +29,12 @@ createCards(data.films);//llama a la function crearTarjetas
 const select = document.getElementById('director');
 select.addEventListener('change', (event) => {
     let selectValue = event.target.value;
-    if (selectValue === "all"){
+    if(selectValue === "all"){
         createCards(data.films)
     }else{
-        
-        const arrFilterdirector = filterDirector(selectValue, data.films)
-        document.getElementById('percent').innerHTML = `El Porcentaje de Peliculas dirigida por ${selectValue} es: ${percentDirector(data.films, selectValue)} `
-        createCards(arrFilterdirector)
-    }
+    const arrFilterdirector = filterDirector(selectValue, data.films)
+    document.getElementById('percent').innerHTML = `El Porcentaje de Peliculas dirigida por ${selectValue} es: ${percentDirector(data.films, selectValue)} `
+    createCards(arrFilterdirector)}
 })
 
 // *******Filtrar productores*******
@@ -46,10 +44,10 @@ select2.addEventListener('change', (e)=>{
     if(selectValue === "all"){
         createCards(data.films)
     }else{
-        let arrFilterProducer = filterProducer(selectValue, data.films)
-    createCards(arrFilterProducer)
-    }
-    });
+    let arrFilterProducer = filterProducer(selectValue, data.films)
+    // console.log(arrFilterProducer)
+    createCards(arrFilterProducer)}
+});
 
 // *******Ordenar alfabéticamente por título de película*******
 const selectAZ = document.getElementById('orderAZ');
