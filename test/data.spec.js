@@ -171,7 +171,7 @@ describe("orderMovies", ()=>{
 });
 
 describe("orderMovies", ()=>{
-  it("Deberia mostrar el nombre de las peliculas en orden alfabetico A-Z", ()=>{
+  it("Deberia mostrar el nombre de las peliculas en orden alfabetico Z-A", ()=>{
     const AzMovieOrder = [
       {
         id: "58611129-2dbc-4a81-a72f-77ddfc1b1b49",
