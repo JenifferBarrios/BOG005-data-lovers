@@ -1,4 +1,3 @@
-/* DISPOSITIVO GRANDE */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 * {
     margin: 0;
@@ -26,6 +25,8 @@
         background-color: var(--backgroundcolor);
         width: 100%;
         height: auto;
+        margin-right: 20px;
+        margin-left: 20px;
         }
 
         /* ***CABECERA DE LA PAGINA*** */
@@ -125,8 +126,8 @@
         background-color: var(--colorhead);
         height: 200px;
         width: 100%;
-        margin-top: 112px;
-        padding: 10px 40px;
+        margin-top: 120px;
+        padding: 10px 10px;
         border-top: 5px dashed var(--colorbordesorange);
         border-bottom: 5px dashed var(--colorbordesorange);
         color: var(--colortextos);
@@ -186,6 +187,7 @@
         justify-content: center;
         width: 100%;
         margin-top: 0px;
+    
     }
 
     .card {
@@ -384,9 +386,9 @@
     }
 
     .card {
-        width: 250px; 
+        width: 550px; 
         height: auto;
-        margin: 50px;
+        margin: 20px;
         background-color: var(--presentcolor);
         border-left: 4px solid var(--colorbordesorange);
         border-top: 4px solid var(--colorbordesorange); 
@@ -394,6 +396,7 @@
         text-align: center;
         align-items: center;
         word-wrap: break-word;
+        padding: 20px;
     }
 
     .posters {

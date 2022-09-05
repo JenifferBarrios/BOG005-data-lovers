@@ -20,7 +20,7 @@
             <li class="nav-menu-item"><i class="fa-brands fa-fort-awesome icons"></i><a href="#" class="nav-menu-link">Inicio</a></li>
             <li class="nav-menu-item"><i class="fa-solid fa-film icons"></i><a href="#" class="nav-menu-link">Ghibli</a></li>
             <li class="nav-menu-item"><i class="fa-solid fa-photo-film icons"></i><a href="#" class="nav-menu-link">Posters</a></li>
-            <li class="nav-menu-item"><i class="fa-solid fa-code-fork icons"></i><a href="#" class="nav-menu-link">Datos</a></li>
+            <li class="nav-menu-item"><i class="fa-solid fa-code-fork icons"></i><a href="#percent" class="nav-menu-link">Datos</a></li>
           </ul>
         </nav>
       </header>
@@ -31,7 +31,7 @@
             <article id="artic-direct">
               <label for="director" class="filter-label">Directores:</label>
               <select name="director" id="director" class="director filter">
-                <option value="">--</option>
+                <option value="all">Todos</option>
                 <option value="Hayao Miyazaki">Hayao Miyazaki</option>
                 <option value="Isao Takahata">Isao Takahata</option>
                 <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
@@ -51,7 +51,7 @@
             <article id="artic-produc">
               <label for="producer" class="filter-label">Productores:</label>
               <select name="producer" id="producer" class="producer filter">
-                <option value="">--</option>
+                <option value="all">Todos</option>
                 <option value="Hayao Miyazaki">Hayao Miyazaki</option>
                 <option value="Isao Takahata">Isao Takahata</option>
                 <option value="Toru Hara">Toru Hara</option>
@@ -66,9 +66,11 @@
           <article>
             <h2>Visita las películas más bellas y premiadas de Ghibli. ¡Conócelas y antójate de verlas!</h2>
           </article>
-          <article class="percent" id="percent">
+        <section class="percent" id="percent">
+          <article>
             <!-- Aquí se pinta el cálculo de porcentaje de películas dirigidas por x director -->
           </article>
+        </section> 
         </section>
         <section class="container" id="allCards">
           <!-- Aquí se pintan las tarjetas con el js -->
