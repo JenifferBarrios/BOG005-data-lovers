@@ -21,7 +21,6 @@ function createCards(movies){
             <img class='posters' src='${films.poster}'
             <p class='description'>${films.description}</p>
             <p class='releaseDate'>Release Year: ${films.release_date}</p>
-
     `});
 }
 createCards(data.films);//llama a la function crearTarjetas
