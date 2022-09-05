@@ -1,4 +1,3 @@
-/* DISPOSITIVO GRANDE */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 * {
     margin: 0;
@@ -579,6 +578,7 @@
     .presentation {
         color: var(--colortextos);
         margin: 20px;
+        font-size: 30px;
         
     }
 
