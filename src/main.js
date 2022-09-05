@@ -29,18 +29,24 @@ createCards(data.films);//llama a la function crearTarjetas
 const select = document.getElementById('director');
 select.addEventListener('change', (event) => {
     let selectValue = event.target.value;
+    if(selectValue === "all"){
+        createCards(data.films)
+    }else{
     const arrFilterdirector = filterDirector(selectValue, data.films)
     document.getElementById('percent').innerHTML = `El Porcentaje de Peliculas dirigida por ${selectValue} es: ${percentDirector(data.films, selectValue)} `
-    createCards(arrFilterdirector)
+    createCards(arrFilterdirector)}
 })
 
 // *******Filtrar productores*******
 const select2 = document.getElementById('producer');//Identifica al elemento 'productor'
 select2.addEventListener('change', (e)=>{
     let selectValue = e.target.value 
+    if(selectValue === "all"){
+        createCards(data.films)
+    }else{
     let arrFilterProducer = filterProducer(selectValue, data.films)
     // console.log(arrFilterProducer)
-    createCards(arrFilterProducer)
+    createCards(arrFilterProducer)}
 });
 
 // *******Ordenar alfabéticamente por título de película*******
