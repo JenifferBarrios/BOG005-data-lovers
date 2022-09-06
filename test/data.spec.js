@@ -1,4 +1,4 @@
-import { filterDirector, filterProducer, orderMovies } from "../src/data.js";
+import { filterDirector, filterProducer, orderMovies, percentDirector } from "../src/data.js";
 
 const dataSample = [
   {
@@ -225,3 +225,9 @@ describe("orderMovies", ()=>{
     expect(orderMovies('ZA',dataSample)).toEqual(AzMovieOrder);
   })
 });
+
+describe('percentDirector', () => {
+  it('Deberia ser una funcion', () => {
+    expect(typeof percentDirector).toBe('function')
+  })
+})
