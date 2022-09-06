@@ -25,7 +25,8 @@
         background-color: var(--backgroundcolor);
         width: 100%;
         height: auto;
-        }
+    }
+
     /* ***CABECERA DE LA PAGINA*** */
     header {
         width: 100%;
@@ -176,27 +177,28 @@
     /* *******PRESENTACION DE LA PAGINA******* */
     .presentation {
         color: var(--colortextos);
-        margin: 20px;
-        font-size: 8px;
+        margin: 10px;
+        font-size: 12px;
+        font-style: italic;
         background-color: var(--presentcolor);
         text-align: center;
-        width: 90%;
+        width: 95%;
     }
 
     .percent{
-        font-size:20px;
+        font-size:15px;
         text-align: center;
         margin-left: 15px;
         width: 90%;
         color: rgb(17, 17, 17);
-        text-shadow: 2px 2px #55C5D1;
+        text-shadow: 2px 1px #55C5D1;
     }
 
     /* ***CUERPO DE LA PAGINA TARJETAS DISPOSITIVO PEQUEÑO*** */
     .container {
         display: block;
         width: 80%;
-        margin-left: 20px;
+        margin-left: 10px;
     }
 
     .card {
@@ -224,7 +226,6 @@
         margin-left: 5px;
         margin-right: 10px;
         margin-bottom: 10px;
-        border-color: var(--colorbordesorange);
         border-radius: 15px;   
         float: left;
     }
@@ -235,7 +236,7 @@
         margin-left: 10px;
         text-align: center;
         color: black;
-        font-size: 20px;
+        font-size: 25px;
         font-style: oblique;
     }
 
@@ -256,13 +257,30 @@
     }
 
     /* SECCIONES ADICIONALES */
-    #curios {
-        margin: 50px 25px;
-    }
-
     #ghibli{
         margin: 100px 25px;
+        text-align: justify;
     }
+
+    #gif-totoro {
+        height: 130px;
+        margin-left: 10px;
+    }
+
+    .gifs {
+        height: 140px;
+        margin-left: 40px;
+    }
+
+    .sect-title {
+        text-align: center;
+    }
+
+    
+    .curious-text {
+        margin: 20px;
+        text-align: justify;
+    } 
 }
 
 /* =============================================================== 
@@ -327,10 +345,7 @@
         color: var(--colortextos);
         font-size: 15px;
         font-style: italic;
-        /* width: 80%; */
         text-align: right;
-        margin-top: -5px;
-        margin-left: 10px;
         padding: 20px;
     }
 
@@ -392,7 +407,7 @@
 
     #artic-direct {
         display: block;
-        margin: 5px;
+        margin: 10px;
         padding-left: 50px;
     }
 
@@ -412,16 +427,18 @@
     .presentation {
         color: var(--colortextos);
         margin: 20px;
-        font-size: 15px;
+        font-size: 20px;
+        font-style: italic;
         background-color: var(--presentcolor);
         text-align: center;
         width: 90%;
     }
 
     .percent{
-        font-size: 25px;
+        font-size: 20px;
         text-align: center;
-        color: rgb(215, 113, 76);
+        color: rgb(17, 17, 17);
+        text-shadow: 2px 1px #55C5D1;
         width: 90%;
     }
 
@@ -430,17 +447,17 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
-        width: 80%;
-        margin-left: 55px;
+        width: 100%;
+        margin: 50px;
     }
 
     .card {
-        width: 600px; 
-        margin: 30px;
-        padding: 30px;
+        width: 650px; 
+        margin: 10px;
+        padding: 20px;
         background-color: var(--presentcolor);
         border-left: 4px solid var(--colorbordesorange);
-        border-top: 6px solid var(--colorbordesorange); 
+        border-top: 4px solid var(--colorbordesorange); 
         border-radius: 15px; 
         text-align: justify; 
         align-items: center;
@@ -452,8 +469,7 @@
         transition: 0.5s;
     }
         
-    .posters {
-        display: flex;
+    #posters {
         height: 300px;
         width: auto;
         margin-left: 35px;
@@ -470,7 +486,7 @@
         margin-left: 10px;
         text-align: center;
         color: black;
-        font-size: 30px;
+        font-size: 20px;
         font-style: oblique;
     }
 
@@ -481,7 +497,7 @@
         margin-top: 10px;
     }
 
-    .card description {
+    #description {
         height:800px ;
         padding: 20px;
         font-size: 15px;
@@ -489,6 +505,32 @@
         text-align: justify;
         box-shadow: 1px;
     }
+
+    /* SECCIONES ADICIONALES */
+    #ghibli{
+        margin: 100px 25px;
+        text-align: justify;
+    }
+
+    #gif-totoro {
+        height: 250px;
+        margin-left: 100px;
+    }
+
+    .gifs {
+        height: 340px;
+        margin-left: 80px;
+    }
+
+    .sect-title {
+        text-align: center;
+    }
+
+    
+    .curious-text {
+        margin: 20px;
+        text-align: justify;
+    } 
 }
 
 /*=============================================================== 
@@ -644,7 +686,7 @@
         font-size: 25px;
         background-color: var(--presentcolor);
         text-align: center;
-        
+        font-style: italic;
     }
 
     .percent{
@@ -720,13 +762,28 @@
     }
 
     /* SECCIONES ADICIONALES */
-    #ghibli {
-        margin: 80px;
+    #ghibli{
+        margin: 100px 25px;
+        text-align: justify;
+    }
+
+    #gif-totoro {
+        height: 250px;
+        margin-left: 500px;
+    }
+
+    .gifs {
+        height: 340px;
+        margin-left: 480px;
+    }
+
+    .sect-title {
         text-align: center;
     }
 
-    #curious {
-        margin: 80px;
-        text-align: center;
-    }
+    
+    .curious-text {
+        margin: 20px;
+        text-align: justify;
+    } 
 }
