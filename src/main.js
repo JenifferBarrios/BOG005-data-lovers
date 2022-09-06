@@ -18,8 +18,8 @@ function createCards(movies){
     container.innerHTML += `
     <article class='card'>
             <h2 class='title'>${films.title}</h2>
-            <img class='posters' src='${films.poster}'
-            <p class='description'>${films.description}</p>
+            <img id='posters' src='${films.poster}'
+            <p id='description'>${films.description}</p>
             <p class='releaseDate'>Release Year: ${films.release_date}</p>
     `});
 }
@@ -33,7 +33,7 @@ select.addEventListener('change', (event) => {
         createCards(data.films)
     }else{
     const arrFilterdirector = filterDirector(selectValue, data.films)
-    document.getElementById('percent').innerHTML = `El Porcentaje de Peliculas dirigida por ${selectValue} es: ${percentDirector(data.films, selectValue)} `
+    document.getElementById('percent').innerHTML = `<h3>El Porcentaje de Peliculas dirigidas por ${selectValue} es: ${percentDirector(data.films, selectValue)} </h3>`
     createCards(arrFilterdirector)}
 })
 

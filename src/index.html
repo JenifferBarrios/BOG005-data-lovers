@@ -17,16 +17,16 @@
             <i class="fas fa-bars"></i>
           </button>
           <ul class="nav-menu nav-menu_visible">
-            <li class="nav-menu-item"><i class="fa-brands fa-fort-awesome icons"></i><a href="#" class="nav-menu-link">Inicio</a></li>
-            <li class="nav-menu-item"><i class="fa-solid fa-film icons"></i><a href="#" class="nav-menu-link">Ghibli</a></li>
-            <li class="nav-menu-item"><i class="fa-solid fa-photo-film icons"></i><a href="#" class="nav-menu-link">Films</a></li>
-            <li class="nav-menu-item"><i class="fa-solid fa-code-fork icons"></i><a href="#percent" class="nav-menu-link">Datos</a></li>
+            <li class="nav-menu-item"><a href="#main" class="nav-menu-link">Inicio</a>
+            <li class="nav-menu-item"><a href="#ghibli" class="nav-menu-link">Ghibli</a>
+            <li class="nav-menu-item"><a href="#presentation" class="nav-menu-link">Posters</a>
+            <li class="nav-menu-item"><a href="#curious" class="nav-menu-link">Curiosidades</a>
           </ul>
         </nav>
       </header>
-      <main class="main">
+      <main class="main" id="main">
         <section class="selectors"> 
-          <h2 id="label-main">Ordena las películas por:</h2> 
+          <p id="label-main">Ordena las películas por:</p> 
           <div class="select-content">
             <article id="artic-direct">
               <label for="director" class="filter-label">Directores:</label>
@@ -62,9 +62,8 @@
           </div>
         </section>
         <section class = "presentation" id="presentation">
-          <!-- <img class="imagenes/icono-polvo.png">  -->
           <article>
-            <h2>Visita las películas más bellas y premiadas de Ghibli. ¡Conócelas y antójate de verlas!</h2>
+            <p>Visita las películas más bellas y premiadas de Ghibli. <br> ¡Conócelas y antójate de verlas!</p>
           </article>
         </section>
         <section class="percent" id="percent">
@@ -74,6 +73,37 @@
         </section>
         <section class="container" id="allCards">
           <!-- Aquí se pintan las tarjetas con el js -->
+        </section>
+        <section id="ghibli">
+          <h2>About Studio Ghibli</h2>
+            <img src="imagenes/totoro.gif" alt="totoro"><br>
+            <p class="aditional-text">
+              Studio Ghibli Inc. (Japanese: 株式会社スタジオジブリ, Hepburn: Kabushiki-gaisha Sutajio Jiburi) is a Japanese animation film studio headquartered in Koganei, Tokyo. It is best known for its animated feature films, and has also produced several short subjects, television commercials, and two television films.
+          </p>
+        </section>
+        <section id="curious">
+          <article>
+            <h2>Curious Ghibli Data</h2>
+            <h3>The Ghibli Name</h3>
+            <img src="imagenes/chihiro.gif.webp" alt="chihirobanner">
+            <p>
+              The name "Ghibli" was chosen by Miyazaki from the Italian noun ghibli (also used in English), based on the Libyan Arabic name for hot desert wind (قبلي, 'ghiblī'), the idea being the studio would "blow a new wind through the anime industry". It also refers to an Italian aircraft, the Caproni Ca.309. Although the Italian word would be more accurately transliterated as "Giburi" (ギブリ), with a hard g sound, the studio is romanised in Japanese as Jiburi (ジブリ
+            </p>
+          </article><br>
+          <article>
+            <p>
+              <h3>Kiki's Delivery Service was Studio Ghibli's first box office hit</h3>
+              <img src="imagenes/kiki.gif" alt="kiki"><br>
+              Although My Neighbor Totoro and Grave of the Fireflies are more famous , the monetary success came with the little witch who makes deliveries on her broom. It was released in 1989 and only got 18 million dollars, which for the studio is a lot.
+            </p>
+          </article><br>
+          <article>
+            <p>
+              <h3>Pom Poko Was The Studio's First Movie To Use Computer Graphics</h3>
+              <img src="imagenes/pompoko.gif" alt="pompoko"><br>
+              These adorable tanukis were the first to be shown with such technology, back in 1992. If you haven't seen this movie yet, you really should. It is one of the most tender and with a very direct teaching.
+            </p>
+          </article><br>
         </section>
       </main>
     <script defer src="main.js" type="module"></script>
