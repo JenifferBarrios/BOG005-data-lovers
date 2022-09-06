@@ -1,5 +1,5 @@
 # DATA LOVERS / DATA GHIBLI
-![ghibli](src/imagenes/chihirobanner.gif)
+![ghibli](src/imagenes/totoro.gif)
 
 ## DEFINICION DE PRODUCTO
 La página tiene como objetivo brindar información a los visitantes sobre las películas realizadas por Estudio Ghibli a través de los años, desde su fundación en 1985.
@@ -23,7 +23,7 @@ Decidimos enfocar esta primera historia de usuario en algunos objetivos transver
 1. [x] El diseño del menú es responsive y difiere entre tamaños de pantalla.
 2. [x] El menú es de fácil acceso visual.
 3. [x] El menú se despliega y permite enlazarse a diferentes luegares web dentro de la web.
-4. [ ] El menú aprueba al menos el 90% de las pruebas de usabilidad realizadas con 6 personas diferentes.
+4. [x] Se aplicó test de usabilidad con 3 personas diferentes.
 5. [x] La página en general y el menú en particular responden a buenas prácticas de diseño visual.
 
 
@@ -59,7 +59,7 @@ YO COMO visitante de la web Ghibli Lovers QUIERO un cálculo con los datos PARA 
 2. [x] La página es completamente responsive
 3. [x] La página se conecta a la API pública de Estudio Ghibli
 4. [x] En la página pueden filtrarse datos de interés, como el director y el productor.
-5. [x] En la página puede ordenarse información, por ejemplo por orden alfabético.
+5. [x] En la página pueden ordenarse las películas alfabéticamente, en orden ascendente y descendente.
 
 ***
 
@@ -74,5 +74,7 @@ YO COMO visitante de la web Ghibli Lovers QUIERO un cálculo con los datos PARA 
 ***
 
 ### TESTEOS DE USABILIDAD
-Durante el reto deberás hacer tests de usabilidad con distintos usuarios, y en base a los resultados, deberás iterar tus diseños. Cuéntanos qué problemas de usabilidad detectaste a través de los tests y cómo los mejoraste en tu propuesta final.
+Realizamos tests de usabilidad con tres usuarios distintos, en las diferentes fases de desarrollo y con base en los resultados, iteramos el diseño. En los test encontramos algunos problemas relacionados con la estructura y disposición de las diferentes secciones de la página, los colores y tamaños de letra para una mejor visualización y la falta de labels que dieran cuenta de la función de los selectores. Pensábamos agregar links que llevaran a otras páginas, pero nos hicieron caer en la cuenta que no es lo óptimo.
+
+![chihiro](src/imagenes/chihirobanner.gif)
 
