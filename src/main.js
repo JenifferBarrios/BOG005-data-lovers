@@ -10,7 +10,6 @@ navToggle.addEventListener('click', () => {
 });
 
 // *******Pinta las tarjetas en el DOM*******
-
 function createCards(movies){
     const container = document.querySelector('.container')
     container.innerHTML= ''
