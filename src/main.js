@@ -18,7 +18,7 @@ function createCards(movies){
     <article class='card'>
             <h2 class='title'>${films.title}</h2>
             <img id='posters' src='${films.poster}'
-            <p id='description'>${films.description}</p>
+            <p class='description'>${films.description}</p>
             <p class='releaseDate'>Release Year: ${films.release_date}</p>
     `});
 }
