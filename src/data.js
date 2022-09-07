@@ -1,5 +1,4 @@
 // *******Esta función filtra la data por director*******
-
 export function filterDirector(directorName, data){ //string Nombre del director y un arreglo toda la data
   const filterData = data.filter(function(filterDirector){
     return filterDirector.director === directorName;
@@ -33,6 +32,7 @@ export function orderMovies(option, data){
     return ordenAZ.reverse();
   }
 }
+
 /* *******Esta función calcula el porcentaje de películas dirigidas por un director******* */
  export function percentDirector(data, director){
   const filmsDirector = filterDirector(director, data)
