@@ -32,7 +32,7 @@ select.addEventListener('change', (event) => {
         createCards(data.films)
     }else{
     const arrFilterdirector = filterDirector(selectValue, data.films)
-    document.getElementById('percent').innerHTML = `<h3>El Porcentaje de Peliculas dirigidas por ${selectValue} es: ${percentDirector(data.films, selectValue)} </h3>`
+    document.getElementById('percent').innerHTML = `<h3>El Porcentaje de películas dirigidas por ${selectValue} es: ${percentDirector(data.films, selectValue)} </h3>`
     createCards(arrFilterdirector)}
 })
 
