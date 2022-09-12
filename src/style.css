@@ -21,6 +21,7 @@
 =============================================================== */
 @media screen and (min-width: 1px) and (max-width: 640px) {
     body {
+        display: flex;
         font-family: var(--fontfamily);
         background-color: var(--backgroundcolor);
         width: 100%;
@@ -30,7 +31,7 @@
     /* ***CABECERA DE LA PAGINA*** */
     header {
         width: 100%;
-        height: 120px;
+        height: 220px;
         background-color: var(--colorhead);
         color: var(--colortextos);
         position: fixed;
@@ -47,7 +48,7 @@
         float: left;
         margin-top: 20px;
         margin-left: 15px;
-        font-size: 30px;
+        font-size: 80px;
         text-shadow: 2px 2px var(--presentcolor);
     }
 
@@ -55,15 +56,15 @@
         position: fixed;
         margin-top: 2px;
         margin-left: 15px;
-        height: 100px;
-        width: 100px; 
+        height: 200px;
+        width: 200px; 
     }
 
     .nav-toggle {
         float: right;
         z-index: auto;
-        font-size: 20px;
-        margin:15px;
+        font-size: 50px;
+        margin:25px;
         color: var(--colortextos);
         background: none;
         border: none;
@@ -72,8 +73,8 @@
 
     .nav-menu {
         width: 100%;
-        height: 150px;
-        margin-top: 120px;
+        height: 200px;
+        margin-top: 220px;
         list-style: none;
         background-color: var(--presentcolor);
         position: fixed;
@@ -93,7 +94,7 @@
 
     .nav-menu-item {
         color: var(--colortextos);
-        font-size: 20px;
+        font-size: 30px;
         font-style: italic;
         text-align: center;
         margin-top: 10px;
@@ -112,9 +113,9 @@
     /* ***CUERPO DE LA PAGINA, SECCION ORDENAR.*** */
     .selectors {
         background-color: var(--colorhead);
-        height: 150px;
-        width: 1300px;
-        margin-top: 130px;
+        height: 155px;
+        width: 100%;
+        margin-top: 230px;
         padding: 10px;
         border-top: 5px dashed var(--colorbordesorange);
         border-bottom: 5px dashed var(--colorbordesorange);
@@ -123,19 +124,18 @@
     }
 
     #label-main {
-        font-size: 15px;
+        font-size: 25px;
         margin-left: 20px;
     }
 
     .select-content {
+        display: flex;
         margin-top: 20px;
-        margin-left: -40px;
-        padding-right: -10px;
     }
 
     .filter {
         font-family: var(--fontfamily);
-        font-size: 15px;
+        font-size: 20px;
         border-radius: 15px;
         border-color: var(--colorbordesorange);
         background-color: #95d0d8;
@@ -143,7 +143,7 @@
     }
 
     .filter-label {
-        font-size: 15px;
+        font-size: 20px;
         text-align: center;
         margin-bottom: 5px;
     }
@@ -169,19 +169,20 @@
     /* *******PRESENTACION DE LA PAGINA******* */
     .presentation {
         color: var(--colortextos);
-        margin: 10px;
-        padding-top: 10px;
-        font-size: 12px;
+        margin: 5px;
+        margin-top: 50px;
+        padding-top: 0px;
+        font-size: 30px;
         font-style: italic;
         background-color: var(--presentcolor);
         text-align: center;
-        width: 95%;
-        height: 50px;
-        border-radius: 5px;
+        width: 100%;
+        height: 100px;
+        border-radius: 10px;
     }
 
     .percent{
-        font-size:15px;
+        font-size:30px;
         text-align: center;
         margin-left: 15px;
         width: 90%;
@@ -193,14 +194,13 @@
     .container {
         display: grid;
         justify-content: center;
-        width: 80%;
+        width: 100%;
         height: auto;
-        margin-left: 40px;
     }
 
     .card {
-        width: 300px; 
-        margin: 10px;
+        width: 800px; 
+        margin: 30px;
         padding: 10px;
         background-color: var(--presentcolor);
         border-left: 4px solid var(--colorbordesorange);
@@ -218,7 +218,7 @@
         
     #posters {
         display: flex;
-        height: 200px;
+        height: 400px;
         width: auto;
         margin-left: 5px;
         margin-right: 10px;
@@ -231,7 +231,7 @@
         color: var(--colortextos);
         padding: 10px;
         margin-left: 10px;
-        text-align: center;
+        text-align: left;
         color: black;
         font-size: 25px;
         font-style: oblique;
@@ -247,37 +247,52 @@
     #description {
         height: 300px ;
         padding: 25px;
-        font-size: 10px;
+        font-size: 20px;
         line-height: 1.5;
         text-align: justify;
         box-shadow: 1px;
     }
 
     /* SECCIONES ADICIONALES */
-    #ghibli{
-        margin: 100px 25px;
+    .section-ghibli{
+        display: block;
+        /* grid-template-columns: repeat(1, 1fr); */
+        margin: 50px 85px;
         text-align: justify;
+        font-size: 30px;
     }
 
-    #gif-totoro {
-        height: 130px;
-        margin-left: 10px;
-    }
-
-    .gifs {
-        height: 140px;
-        margin-left: 40px;
-    }
-
-    .sect-title {
+    #title-about {
+        font-size: 50px;
         text-align: center;
     }
 
-    
-    .curious-text {
-        margin: 20px;
+    #gif-totoro {
+        display: flex;
+        width: 90%;
+        height: 250px;
+        margin-left: 20px;
+        
+    }
+
+    .gifs {
+        display: flex;
+        width: 80%;
+        height: 250px;
+        margin-left: 80px;
+    }
+
+    #title-curious {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .section-curiousities{
+        display: grid;
+        margin: 15px 85px;
         text-align: justify;
-    } 
+        font-size: 30px;
+    }
 }
 
 /* =============================================================== 
@@ -653,7 +668,6 @@
 
     #artic-direct {
         display: block;
-        margin-top: -5px;
         padding-left: 50px;
         font-size: 30px;
     }

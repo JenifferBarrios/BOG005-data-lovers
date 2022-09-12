@@ -18,9 +18,9 @@
           </button>
           <ul class="nav-menu nav-menu_visible">
             <li class="nav-menu-item"><a href="#main" class="nav-menu-link">Inicio</a></li>
-            <li class="nav-menu-item"><a href="#ghibli" class="nav-menu-link">Ghibli</a></li>
+            <li class="nav-menu-item"><a href="#title-about" class="nav-menu-link">Ghibli</a></li>
             <li class="nav-menu-item"><a href="#presentation" class="nav-menu-link">Posters</a></li>
-            <li class="nav-menu-item"><a href="#curious" class="nav-menu-link">Curiosidades</a></li>
+            <li class="nav-menu-item"><a href="#title-curious" class="nav-menu-link">Curiosidades</a></li>
           </ul>
         </nav>
       </header>
@@ -41,7 +41,7 @@
               </select>
             </article>
             <article id="artic-az"> 
-              <label for="orderAZ" class="filter-label">Nombre</label>
+              <label for="orderAZ" class="filter-label">Título</label>
               <select name="orderAZ" id="orderAZ" class="orderAZ filter">
                 <option value="AZ"></option>
                 <option value="AZ">A-Z</option>
@@ -74,33 +74,33 @@
         <section class="container" id="allCards">
           <!-- Aquí se pintan las tarjetas con el js -->
         </section>
-        <section id="ghibli">
-          <h2 class="sect-title">About Studio Ghibli</h2>
+        <section class="section-ghibli">
+          <h2 id="title-about">About Studio Ghibli</h2>
             <img src="imagenes/totoro.gif" alt="totoro" id="gif-totoro"><br>
-            <p>
+            <p id="about-text">
               Studio Ghibli Inc. (Japanese: 株式会社スタジオジブリ, Hepburn: Kabushiki-gaisha Sutajio Jiburi) is a Japanese animation film studio headquartered in Koganei, Tokyo. It is best known for its animated feature films, and has also produced several short subjects, television commercials, and two television films.
           </p>
         </section>
-        <section id="curious">
-          <article>
-            <h2 class="sect-title">Curious Ghibli Data</h2>
-            <h3 class="sect-title">The Ghibli Name</h3>
+        <section class="section-curiousities">
+          <article id="article-ghibli-name">
+            <h2 id="title-curious">Ghibli Curiousities</h2><br>
+            <h3 id="ghibli-title">The Ghibli Name</h3>
             <img src="imagenes/kodamas.gif" alt="chihirobanner" class="gifs">
-            <p class="curious-text">
+            <p id="kodamas-text">
               The name "Ghibli" was chosen by Miyazaki from the Italian noun ghibli (also used in English), based on the Libyan Arabic name for hot desert wind (قبلي, 'ghiblī'), the idea being the studio would "blow a new wind through the anime industry". It also refers to an Italian aircraft, the Caproni Ca.309. Although the Italian word would be more accurately transliterated as "Giburi" (ギブリ), with a hard g sound, the studio is romanised in Japanese as Jiburi (ジブリ
             </p>
           </article><br>
-          <article>
-            <h3 class="sect-title">Kiki's Delivery Service was Studio Ghibli's first box office hit</h3>
+          <article id="article-kiki">
+            <h3 id="kiki-title">Kiki's Delivery Service was Studio Ghibli's first box office hit</h3>
             <img src="imagenes/kiki.gif" alt="kiki" class="gifs"><br>
-            <p class="curious-text">  
+            <p id="kiki-text">  
               Although My Neighbor Totoro and Grave of the Fireflies are more famous , the monetary success came with the little witch who makes deliveries on her broom. It was released in 1989 and only got 18 million dollars, which for the studio is a lot.
             </p>
           </article><br>
-          <article>
-            <h3 class="sect-title">Pom Poko Was The Studio's First Movie To Use Computer Graphics</h3>
+          <article id="article-pompoko">
+            <h3 id="pompoko-title">Pom Poko Was The Studio's First Movie To Use Computer Graphics</h3>
             <img src="imagenes/pompoko.gif" alt="pompoko" class="gifs"><br>
-           <p class="curious-text">   
+           <p id="pompoko-text">   
               These adorable tanukis were the first to be shown with such technology, back in 1992. If you haven't seen this movie yet, you really should. It is one of the most tender and with a very direct teaching.
             </p>
           </article><br>
